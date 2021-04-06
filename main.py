@@ -52,7 +52,7 @@ def busquedaGPU():
 def busquedaRAM():
     marca = pedirInfo("seleccione la marca: ", "Crucial", "HyperX", "Corsair")
     capacidad = pedirInfo("seleccione la capacidad: ", "2 GB", "4 GB", "8 GB", "16 GB")
-    frecuencia = pedirInfo("Seleccione el la frecuencia: " , " 2400 Mhz", " 2777 Mhz", "3000 Mhz", "3200 Mhz")
+    frecuencia = pedirInfo("Seleccione el la frecuencia: " , "2400 Mhz", "2777 Mhz", "3000 Mhz", "3200 Mhz")
 
 
     print("Se empieza a buscar la memoria RAM bajo los parametros:" + "\nMarca: ", marca +
