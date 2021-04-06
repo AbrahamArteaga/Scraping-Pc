@@ -60,6 +60,7 @@ def datos_gpu():
           "\nLinea: ", linea + "\nModelo: ", modelo)
     busquedas.buscar_gpu()
 
+
 def datos_ram():
     """
     Esta funcion es la encargada de realizar las busquedas de memoria RAM
