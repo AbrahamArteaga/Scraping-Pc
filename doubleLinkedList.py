@@ -1,3 +1,5 @@
+import node
+
 class linkedList:
     def __init__(self):
         self.first = None
