@@ -1,13 +1,9 @@
-import node
-
-
-class DoubleLinkedList:
+class linkedList:
     def __init__(self):
         self.first = None
         self.last = None
-
-    def insert_end(self, data):
-        n = node.Node(data)
+    def insertEnd(self, data):
+        n = node(data)
         if not self.first:
             self.first = n
             self.last = n
@@ -15,12 +11,11 @@ class DoubleLinkedList:
         n.previous = self.last
         self.last.next = n
         self.last = n
-
-    def save_list(self):
+    def saveList(self):
         s = ""
-        current_node = self.first
-        while current_node:
-            s += str(current_node.data) + " "
-            current_node = current_node.next
+        currentNode = self.first
+        while currentNode:
+            s += str(currentNode.data) + " "
+            currentNode = currentNode.next
         s += "\n"
         return s
