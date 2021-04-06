@@ -1,4 +1,5 @@
 
+
 def buscar_cpu():
     print("Buscar cpus (WIP)")
 
