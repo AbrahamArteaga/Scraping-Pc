@@ -1,19 +1,19 @@
 
 def buscar_cpu():
-    print("Buscar cpus")
+    print("Buscar cpus (WIP)")
 
 
 def buscar_gpu():
-    print("Buscar cpus")
+    print("Buscar gpus (WIP)")
 
 
 def buscar_mother():
-    print("Buscar cpus")
+    print("Buscar mother boards (WIP)")
 
 
 def buscar_psu():
-    print("Buscar cpus")
+    print("Buscar psu (WIP)")
 
 
 def buscar_ram():
-    print("Buscar cpus")
+    print("Buscar ram (WIP)")
