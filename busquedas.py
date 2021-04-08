@@ -3,8 +3,8 @@ Modulo encargado de ejecutar las querys de busqueda
 en la base de datos, funciona mediante JSON.
 """
 
-def buscar_cpu():
 
+def buscar_cpu():
     """
     Buscara en la base de datos
     todo lo relacionado a CPU
@@ -14,7 +14,6 @@ def buscar_cpu():
 
 
 def buscar_gpu():
-
     """
     Buscara en la base de datos
     todo lo relacionado a tarjetas
@@ -25,7 +24,6 @@ def buscar_gpu():
 
 
 def buscar_mother():
-
     """
     Buscara en la base de datos
     todo lo relacionado a tarjetas madre
@@ -35,7 +33,6 @@ def buscar_mother():
 
 
 def buscar_psu():
-
     """
     Buscara en la base de datos
     todo lo relacionado a PSU
@@ -45,7 +42,6 @@ def buscar_psu():
 
 
 def buscar_ram():
-
     """
     Buscara en la base de datos
     todo lo relacionado a mamorias
