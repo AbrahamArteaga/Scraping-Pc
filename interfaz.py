@@ -1,11 +1,20 @@
+"""
+Modulo de interfaz, encargado de ejecutar
+la comunicación entre el usuario y la aplicación.
+"""
+
+
 import busquedas
 
 
 def pedir_info(texto, *opciones):
-    """Pedir info es la funcion que sirve como interfaz,
+
+    """
+    Pedir info es la funcion que sirve como interfaz,
     esta tiene como parametros una linea de texto
     y una cantidad indefinida de opciones
-    que el usuario puede elegir"""
+    que el usuario puede elegir
+    """
 
     print(texto)
     count = 0
@@ -17,6 +26,7 @@ def pedir_info(texto, *opciones):
 
 
 def datos_cpu():
+
     """
     Esta funcion es la encargada de realizar las busquedas de CPU
     """
@@ -40,6 +50,7 @@ def datos_cpu():
 
 
 def datos_gpu():
+
     """
     Esta funcion es la encargada de realizar las busquedas de Tarjetas Graficas
     """
@@ -62,6 +73,7 @@ def datos_gpu():
 
 
 def datos_ram():
+
     """
     Esta funcion es la encargada de realizar las busquedas de memoria RAM
     """
@@ -78,6 +90,7 @@ def datos_ram():
 
 
 def datos_mother():
+
     """
     Esta es la funcion encargada de hacer las busquedas de placas madre
     """
@@ -87,6 +100,7 @@ def datos_mother():
 
 
 def datos_psu():
+
     """
     Esta es la busqueda encargada de hacer las busquedas de PSU
     """

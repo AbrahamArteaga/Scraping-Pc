@@ -1,3 +1,7 @@
+"""
+Modulo principal de la GUI
+"""
+
 from tkinter import *
 
 raiz = Tk()

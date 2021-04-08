@@ -1,6 +1,11 @@
+"""
+Modulo encargado de leer la informacion
+de los JSON de cada componente
+"""
+
 import json
 
-ruta = "datos_cpu.json"
-cpus = json.load(open(ruta))
+RUTA = "datos_cpu.json"
+cpus = json.load(open(RUTA))
 
 print(type(cpus))
