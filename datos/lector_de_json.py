@@ -1,6 +1,6 @@
 import json
 
-archivo = open("Scrap/JsonGenerados/datos_CPU.json", "r")
+archivo = open("Scrap/JsonGenerados/datos_cpu.json", "r")
 traduccion = archivo.read()
 diccinarios = json.loads(traduccion)
 

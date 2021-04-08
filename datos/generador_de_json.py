@@ -40,7 +40,7 @@ def main(veces):
     data_string = json.dumps(datos)
     print(data_string)
 
-    a = open("Scrap/JsonGenerados/datos_CPU.json", "w")
+    a = open("Scrap/JsonGenerados/datos_cpu.json", "w")
     a.write(data_string)
     a.close()
 
