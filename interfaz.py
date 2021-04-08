@@ -37,7 +37,7 @@ def datos_cpu():
         linea = pedir_info("Seleccione la linea: ", "Pentium", "Core i3",
                            "Core i5", "Core i7", "Core i9")
         generacion = pedir_info("Seleccione la generacion:", "8va generacion",
-                                "9na generacion", "10ma generacion")
+                                "9na generacion", "10ma generacion", )
     else:
         linea = pedir_info("seleccione la linea: ", "Athlon", "Ryzen 3",
                            "Ryzen 5", "Ryzen 7", "Ryzen 9")
