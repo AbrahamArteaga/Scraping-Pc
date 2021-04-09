@@ -1,13 +1,13 @@
 import json
 import random
 
-Procesador = ["Intel", "AMD"]
-Procesador1 = ["Pentium", "Core i3", "Core i5", "Core i7", "Core i9"]
-Procesador1a = ["8va generacion", "9na generacion", "10ma generacion"]
-Procesador2 = ["Athlon", "Ryzen 3", "Ryzen 5", "Ryzen 7", "Ryzen 9"]
-Procesador2b = ["Ryzen 2000", "Ryzen 3000", "Ryzen 5000"]
-ProcesadorT = [" Nuevo", "", " Solo abierto"]
-ProcesadorH = [" Garantia 6 Meses", " Garantia 3 Meses", ""]
+lista_marcas = ["Intel", "AMD"]
+lista_lineas_intel = ["Pentium", "Core i3", "Core i5", "Core i7", "Core i9"]
+lista_generaciones_intel = ["8va generacion", "9na generacion", "10ma generacion"]
+lista_lineas_amd = ["Athlon", "Ryzen 3", "Ryzen 5", "Ryzen 7", "Ryzen 9"]
+lista_generaciones_amd = ["Ryzen 2000", "Ryzen 3000", "Ryzen 5000"]
+lista_estados = [" Nuevo", " Solo abierto"]
+lista_garantias = [" Garantia 6 Meses", " Garantia 1 año", "Garantia 2 años", "Garantia de por vida"]
 
 
 def main(veces):
@@ -15,17 +15,17 @@ def main(veces):
 
     def generar(tipo):
 
-        marca = random.choice(Procesador)
+        marca = random.choice(lista_marcas)
         if marca == "Intel":
-            linea = random.choice(Procesador1)
-            generacion = random.choice(Procesador1a)
+            linea = random.choice(lista_lineas_intel)
+            generacion = random.choice(lista_generaciones_intel)
         else:
-            linea = random.choice(Procesador2)
-            generacion = random.choice(Procesador2b)
+            linea = random.choice(lista_lineas_amd)
+            generacion = random.choice(lista_generaciones_amd)
 
         tipo = {
             "id": str(tipo).zfill(4),
-            "nombre": "Procesador" + " " + linea + random.choice(ProcesadorT) + random.choice(ProcesadorH),
+            "nombre": "Procesador" + " " + linea + random.choice(lista_estados) + random.choice(lista_garantias),
             "marca": marca,
             "linea": linea,
             "generacion": generacion,

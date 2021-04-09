@@ -12,7 +12,7 @@ Modulos que se importan: interfaz.py
 import interfaz
 
 
-def busqueda_componente():
+def buscar_componente():
     """
     Dependiendo de que componente elija el usuario,
     se llama a la funcion correspondiente
@@ -32,4 +32,4 @@ def busqueda_componente():
         interfaz.datos_ram()
 
 
-busqueda_componente()
+buscar_componente()
