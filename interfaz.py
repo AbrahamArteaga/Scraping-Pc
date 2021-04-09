@@ -41,7 +41,7 @@ def datos_cpu():
         generacion = pedir_info("Seleccione la generacion:", "Ryzen 1000", "Ryzen 2000",
                                 "Ryzen 3000", "Ryzen 5000")
     estado = pedir_info("Seleccione el estado del componente", "Nuevo", "Solo abierto")
-    garantia = pedir_info("seleccione la garantia minima: ", "Garantia 6 Meses", " Garantia 1 año", "Garantia 2 años",
+    garantia = pedir_info("seleccione la garantia minima: ", "Garantia 6 Meses", "Garantia 1 año", "Garantia 2 años",
                           "Garantia de por vida")
 
     print("Se empieza a buscar el procesador bajo los parametros:" + "\nMarca: ", marca +
