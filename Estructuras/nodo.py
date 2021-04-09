@@ -2,8 +2,8 @@
 Este es el Modulo nodo.
 """
 
-class Nodo:
 
+class Nodo:
     """
     Nombre de clase: Nodo
     Atributos: data, siguiente, previo

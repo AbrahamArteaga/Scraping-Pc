@@ -5,8 +5,7 @@ se implementa nuestra
 estructura de datos propia
 """
 
-
-import nodo
+from Estructuras import nodo
 
 
 class DobleListaEnlazada:
