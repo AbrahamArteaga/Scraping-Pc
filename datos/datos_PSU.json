@@ -1,0 +1,502 @@
+[
+  {
+    "id": "50001",
+    "nombre": "Fuente",
+    "marca": "ASRock",
+    "Potencia": "900W",
+    "Certificacion": "80+ Gold",
+    "valor": 210000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50002",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "1000W",
+    "Certificacion": "80+ Titanium",
+    "valor": 140000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50003",
+    "nombre": "Fuente",
+    "marca": "ROG",
+    "Potencia": "500W",
+    "Certificacion": "80+ Gold",
+    "valor": 380000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50004",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "700W",
+    "Certificacion": "80+ Silver",
+    "valor": 350000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50005",
+    "nombre": "Fuente",
+    "marca": "Aorus",
+    "Potencia": "700W",
+    "Certificacion": "80+ Bronze",
+    "valor": 140000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50006",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "900W",
+    "Certificacion": "80+ Gold",
+    "valor": 160000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50007",
+    "nombre": "Fuente",
+    "marca": "ROG",
+    "Potencia": "500W",
+    "Certificacion": "80+ Gold",
+    "valor": 180000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50008",
+    "nombre": "Fuente",
+    "marca": "Asus",
+    "Potencia": "500W",
+    "Certificacion": "80+ Bronze",
+    "valor": 110000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50009",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "700W",
+    "Certificacion": "80+ Gold",
+    "valor": 240000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50010",
+    "nombre": "Fuente",
+    "marca": "Aorus",
+    "Potencia": "400W",
+    "Certificacion": "80+ Bronze",
+    "valor": 340000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50011",
+    "nombre": "Fuente",
+    "marca": "Aorus",
+    "Potencia": "500W",
+    "Certificacion": "80+ Bronze",
+    "valor": 210000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50012",
+    "nombre": "Fuente",
+    "marca": "Asus",
+    "Potencia": "1000W",
+    "Certificacion": "80+ Bronze",
+    "valor": 180000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "50013",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "400W",
+    "Certificacion": "80+ Gold",
+    "valor": 260000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50014",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "700W",
+    "Certificacion": "80+ Bronze",
+    "valor": 310000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50015",
+    "nombre": "Fuente",
+    "marca": "ASRock",
+    "Potencia": "500W",
+    "Certificacion": "80+ Gold",
+    "valor": 310000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50016",
+    "nombre": "Fuente",
+    "marca": "ROG",
+    "Potencia": "900W",
+    "Certificacion": "80+ Silver",
+    "valor": 310000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50017",
+    "nombre": "Fuente",
+    "marca": "Asus",
+    "Potencia": "400W",
+    "Certificacion": "80+ Silver",
+    "valor": 260000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50018",
+    "nombre": "Fuente",
+    "marca": "ASRock",
+    "Potencia": "900W",
+    "Certificacion": "80+ Silver",
+    "valor": 230000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50019",
+    "nombre": "Fuente",
+    "marca": "Aorus",
+    "Potencia": "1000W",
+    "Certificacion": "80+ Titanium",
+    "valor": 140000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50020",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "800W",
+    "Certificacion": "80+ Bronze",
+    "valor": 280000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50021",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "500W",
+    "Certificacion": "80+ Platinum",
+    "valor": 120000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "50022",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "400W",
+    "Certificacion": "80+ Titanium",
+    "valor": 150000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50023",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "500W",
+    "Certificacion": "80+ Titanium",
+    "valor": 240000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "50024",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "400W",
+    "Certificacion": "80+ Gold",
+    "valor": 280000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50025",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "600W",
+    "Certificacion": "80+ Silver",
+    "valor": 190000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50026",
+    "nombre": "Fuente",
+    "marca": "Asus",
+    "Potencia": "1000W",
+    "Certificacion": "80+ Bronze",
+    "valor": 210000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50027",
+    "nombre": "Fuente",
+    "marca": "Asus",
+    "Potencia": "700W",
+    "Certificacion": "80+ Gold",
+    "valor": 380000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50028",
+    "nombre": "Fuente",
+    "marca": "ASRock",
+    "Potencia": "400W",
+    "Certificacion": "80+ Gold",
+    "valor": 270000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "50029",
+    "nombre": "Fuente",
+    "marca": "ROG",
+    "Potencia": "400W",
+    "Certificacion": "80+ Silver",
+    "valor": 150000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50030",
+    "nombre": "Fuente",
+    "marca": "ASRock",
+    "Potencia": "500W",
+    "Certificacion": "80+ Titanium",
+    "valor": 380000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "50031",
+    "nombre": "Fuente",
+    "marca": "ASRock",
+    "Potencia": "600W",
+    "Certificacion": "80+ Bronze",
+    "valor": 120000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50032",
+    "nombre": "Fuente",
+    "marca": "Aorus",
+    "Potencia": "700W",
+    "Certificacion": "80+ Silver",
+    "valor": 330000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50033",
+    "nombre": "Fuente",
+    "marca": "ASRock",
+    "Potencia": "500W",
+    "Certificacion": "80+ Titanium",
+    "valor": 300000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50034",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "600W",
+    "Certificacion": "80+ Titanium",
+    "valor": 260000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50035",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "500W",
+    "Certificacion": "80+ Titanium",
+    "valor": 300000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50036",
+    "nombre": "Fuente",
+    "marca": "Aorus",
+    "Potencia": "900W",
+    "Certificacion": "80+ Titanium",
+    "valor": 350000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50037",
+    "nombre": "Fuente",
+    "marca": "Asus",
+    "Potencia": "1000W",
+    "Certificacion": "80+ Platinum",
+    "valor": 390000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50038",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "400W",
+    "Certificacion": "80+ Gold",
+    "valor": 140000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "50039",
+    "nombre": "Fuente",
+    "marca": "ROG",
+    "Potencia": "1000W",
+    "Certificacion": "80+ Gold",
+    "valor": 230000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "50040",
+    "nombre": "Fuente",
+    "marca": "ASRock",
+    "Potencia": "600W",
+    "Certificacion": "80+ Bronze",
+    "valor": 300000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50041",
+    "nombre": "Fuente",
+    "marca": "Asus",
+    "Potencia": "400W",
+    "Certificacion": "80+ Platinum",
+    "valor": 300000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50042",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "400W",
+    "Certificacion": "80+ Gold",
+    "valor": 130000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "50043",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "500W",
+    "Certificacion": "80+ White",
+    "valor": 180000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "50044",
+    "nombre": "Fuente",
+    "marca": "Aorus",
+    "Potencia": "900W",
+    "Certificacion": "80+ Platinum",
+    "valor": 300000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "50045",
+    "nombre": "Fuente",
+    "marca": "Msi",
+    "Potencia": "500W",
+    "Certificacion": "80+ White",
+    "valor": 290000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50046",
+    "nombre": "Fuente",
+    "marca": "ROG",
+    "Potencia": "700W",
+    "Certificacion": "80+ Bronze",
+    "valor": 140000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50047",
+    "nombre": "Fuente",
+    "marca": "Aorus",
+    "Potencia": "400W",
+    "Certificacion": "80+ Bronze",
+    "valor": 340000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50048",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "700W",
+    "Certificacion": "80+ Titanium",
+    "valor": 100000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "50049",
+    "nombre": "Fuente",
+    "marca": "ROG",
+    "Potencia": "800W",
+    "Certificacion": "80+ Silver",
+    "valor": 310000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "50050",
+    "nombre": "Fuente",
+    "marca": "Gigabyte",
+    "Potencia": "900W",
+    "Certificacion": "80+ Titanium",
+    "valor": 120000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  }
+]

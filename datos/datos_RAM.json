@@ -1,0 +1,502 @@
+[
+  {
+    "id": "30001",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "4 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 370000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "30002",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "2 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 470000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30003",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "8 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 270000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "30004",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "2 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 220000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "30005",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "8 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 220000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "30006",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "16 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 270000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "30007",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "16 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 270000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30008",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "4 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 420000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30009",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "2 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 220000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30010",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "4 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 170000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30011",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "8 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 120000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "30012",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "2 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 270000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30013",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "4 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 470000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "30014",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "2 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 170000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "30015",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "4 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 170000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "30016",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "16 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 470000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30017",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "16 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 370000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30018",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "16 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 170000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30019",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "4 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 420000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30020",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "16 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 170000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30021",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "2 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 420000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "30022",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "4 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 370000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30023",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "8 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 420000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "30024",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "4 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 420000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "30025",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "8 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 320000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30026",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "2 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 470000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "30027",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "4 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 470000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "30028",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "8 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 470000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30029",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "2 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 320000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30030",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "8 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 220000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30031",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "2 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 370000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30032",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "4 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 370000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "30033",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "4 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 370000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30034",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "2 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 420000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "30035",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "16 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 420000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "30036",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "2 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 370000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30037",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "2 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 270000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30038",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "8 GB",
+    "frecuencia": "3000 Mhz",
+    "valor": 220000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30039",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "8 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 120000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30040",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "4 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 470000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30041",
+    "nombre": "Tarjeta Ram",
+    "marca": "Corsair",
+    "capacidad": "8 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 370000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30042",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "16 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 320000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30043",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "2 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 320000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "30044",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "2 GB",
+    "frecuencia": "3200 Mhz",
+    "valor": 220000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "30045",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "4 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 220000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "30046",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "2 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 370000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "30047",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "8 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 420000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "30048",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "8 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 120000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "30049",
+    "nombre": "Tarjeta Ram",
+    "marca": "HyperX",
+    "capacidad": "2 GB",
+    "frecuencia": "2400 Mhz",
+    "valor": 220000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "30050",
+    "nombre": "Tarjeta Ram",
+    "marca": "Crucial",
+    "capacidad": "4 GB",
+    "frecuencia": "2777 Mhz",
+    "valor": 120000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  }
+]

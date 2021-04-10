@@ -1,0 +1,502 @@
+[
+  {
+    "id": "60001",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "2TB",
+    "Tipo": "SSD",
+    "valor": 300000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "60002",
+    "nombre": "Disco Duro",
+    "marca": "SanDisk",
+    "Capacidad": "4 TB",
+    "Tipo": "SSD",
+    "valor": 350000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60003",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "2TB",
+    "Tipo": "SSD",
+    "valor": 225000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "60004",
+    "nombre": "Disco Duro",
+    "marca": "WD",
+    "Capacidad": "4 TB",
+    "Tipo": "SSD",
+    "valor": 150000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "60005",
+    "nombre": "Disco Duro",
+    "marca": "Samsung",
+    "Capacidad": "250 GB",
+    "Tipo": "SSD",
+    "valor": 400000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "60006",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "500 GB",
+    "Tipo": "SSD",
+    "valor": 350000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "60007",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "1 TB",
+    "Tipo": "SSD",
+    "valor": 325000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60008",
+    "nombre": "Disco Duro",
+    "marca": "SanDisk",
+    "Capacidad": "250 GB",
+    "Tipo": "SSD",
+    "valor": 250000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "60009",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "250 GB",
+    "Tipo": "HDD",
+    "valor": 225000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60010",
+    "nombre": "Disco Duro",
+    "marca": "Samsung",
+    "Capacidad": "4 TB",
+    "Tipo": "HDD",
+    "valor": 400000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "60011",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "1 TB",
+    "Tipo": "NVME M.2",
+    "valor": 250000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "60012",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "500 GB",
+    "Tipo": "SSD",
+    "valor": 425000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60013",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "2TB",
+    "Tipo": "HDD",
+    "valor": 325000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60014",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "500 GB",
+    "Tipo": "HDD",
+    "valor": 200000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "60015",
+    "nombre": "Disco Duro",
+    "marca": "Samsung",
+    "Capacidad": "2TB",
+    "Tipo": "HDD",
+    "valor": 300000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "60016",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "1 TB",
+    "Tipo": "NVME M.2",
+    "valor": 250000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "60017",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "250 GB",
+    "Tipo": "HDD",
+    "valor": 300000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "60018",
+    "nombre": "Disco Duro",
+    "marca": "WD",
+    "Capacidad": "2TB",
+    "Tipo": "SSD",
+    "valor": 225000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60019",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "4 TB",
+    "Tipo": "SSD",
+    "valor": 300000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60020",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "250 GB",
+    "Tipo": "HDD",
+    "valor": 300000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60021",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "250 GB",
+    "Tipo": "HDD",
+    "valor": 250000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60022",
+    "nombre": "Disco Duro",
+    "marca": "WD",
+    "Capacidad": "4 TB",
+    "Tipo": "HDD",
+    "valor": 400000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "60023",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "1 TB",
+    "Tipo": "HDD",
+    "valor": 150000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "60024",
+    "nombre": "Disco Duro",
+    "marca": "WD",
+    "Capacidad": "4 TB",
+    "Tipo": "HDD",
+    "valor": 275000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "60025",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "1 TB",
+    "Tipo": "NVME M.2",
+    "valor": 325000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60026",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "500 GB",
+    "Tipo": "SSD",
+    "valor": 400000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "60027",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "1 TB",
+    "Tipo": "SSD",
+    "valor": 425000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60028",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "4 TB",
+    "Tipo": "HDD",
+    "valor": 325000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "60029",
+    "nombre": "Disco Duro",
+    "marca": "SanDisk",
+    "Capacidad": "1 TB",
+    "Tipo": "SSD",
+    "valor": 250000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "60030",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "500 GB",
+    "Tipo": "HDD",
+    "valor": 325000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60031",
+    "nombre": "Disco Duro",
+    "marca": "WD",
+    "Capacidad": "2TB",
+    "Tipo": "HDD",
+    "valor": 175000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60032",
+    "nombre": "Disco Duro",
+    "marca": "SanDisk",
+    "Capacidad": "1 TB",
+    "Tipo": "NVME M.2",
+    "valor": 325000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "60033",
+    "nombre": "Disco Duro",
+    "marca": "WD",
+    "Capacidad": "1 TB",
+    "Tipo": "NVME M.2",
+    "valor": 325000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "60034",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "4 TB",
+    "Tipo": "NVME M.2",
+    "valor": 300000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60035",
+    "nombre": "Disco Duro",
+    "marca": "SanDisk",
+    "Capacidad": "2TB",
+    "Tipo": "HDD",
+    "valor": 350000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60036",
+    "nombre": "Disco Duro",
+    "marca": "Samsung",
+    "Capacidad": "250 GB",
+    "Tipo": "HDD",
+    "valor": 350000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "60037",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "500 GB",
+    "Tipo": "HDD",
+    "valor": 275000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "60038",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "4 TB",
+    "Tipo": "SSD",
+    "valor": 300000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "60039",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "250 GB",
+    "Tipo": "HDD",
+    "valor": 250000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "60040",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "2TB",
+    "Tipo": "SSD",
+    "valor": 400000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60041",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "500 GB",
+    "Tipo": "SSD",
+    "valor": 175000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60042",
+    "nombre": "Disco Duro",
+    "marca": "SanDisk",
+    "Capacidad": "500 GB",
+    "Tipo": "HDD",
+    "valor": 350000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "60043",
+    "nombre": "Disco Duro",
+    "marca": "Adata",
+    "Capacidad": "250 GB",
+    "Tipo": "NVME M.2",
+    "valor": 300000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "60044",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "500 GB",
+    "Tipo": "SSD",
+    "valor": 300000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "60045",
+    "nombre": "Disco Duro",
+    "marca": "Kingston",
+    "Capacidad": "250 GB",
+    "Tipo": "HDD",
+    "valor": 300000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "60046",
+    "nombre": "Disco Duro",
+    "marca": "Crucial",
+    "Capacidad": "2TB",
+    "Tipo": "SSD",
+    "valor": 350000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "60047",
+    "nombre": "Disco Duro",
+    "marca": "SanDisk",
+    "Capacidad": "4 TB",
+    "Tipo": "SSD",
+    "valor": 250000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "60048",
+    "nombre": "Disco Duro",
+    "marca": "WD",
+    "Capacidad": "500 GB",
+    "Tipo": "SSD",
+    "valor": 375000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "60049",
+    "nombre": "Disco Duro",
+    "marca": "Samsung",
+    "Capacidad": "4 TB",
+    "Tipo": "HDD",
+    "valor": 225000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "60050",
+    "nombre": "Disco Duro",
+    "marca": "WD",
+    "Capacidad": "500 GB",
+    "Tipo": "NVME M.2",
+    "valor": 400000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  }
+]
