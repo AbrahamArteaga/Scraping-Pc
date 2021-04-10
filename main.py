@@ -13,6 +13,7 @@ import interfaz
 
 
 def buscar_componente():
+
     """
     Dependiendo de que componente elija el usuario,
     se llama a la funcion correspondiente
