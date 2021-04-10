@@ -5,7 +5,7 @@ se implementa nuestra
 estructura de datos propia
 """
 
-from Estructuras import nodo
+from nodo import Nodo
 
 
 class DobleListaEnlazada:
@@ -27,7 +27,7 @@ class DobleListaEnlazada:
         al final de la doble lista enlazada
         """
 
-        dato = nodo.Nodo(data)
+        dato = Nodo(data)
         if not self.primero:
             self.primero = dato
             self.ultimo = dato
