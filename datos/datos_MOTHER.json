@@ -1,0 +1,452 @@
+[
+  {
+    "id": "40001",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "AM4",
+    "valor": 230000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40002",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "LGA",
+    "valor": 480000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40003",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "AM4",
+    "valor": 290000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40004",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "LGA",
+    "valor": 170000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40005",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "AM4",
+    "valor": 250000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40006",
+    "nombre": "Tarjeta Madre",
+    "marca": "Aorus",
+    "Socket": "AM4",
+    "valor": 250000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40007",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "AM4",
+    "valor": 310000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "40008",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "AM4",
+    "valor": 180000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40009",
+    "nombre": "Tarjeta Madre",
+    "marca": "Asus",
+    "Socket": "LGA",
+    "valor": 320000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "40010",
+    "nombre": "Tarjeta Madre",
+    "marca": "Aorus",
+    "Socket": "AM4",
+    "valor": 230000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40011",
+    "nombre": "Tarjeta Madre",
+    "marca": "Asus",
+    "Socket": "LGA",
+    "valor": 390000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40012",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "LGA",
+    "valor": 220000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "40013",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "LGA",
+    "valor": 410000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40014",
+    "nombre": "Tarjeta Madre",
+    "marca": "Aorus",
+    "Socket": "AM4",
+    "valor": 560000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40015",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "LGA",
+    "valor": 300000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "40016",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "AM4",
+    "valor": 280000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40017",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "LGA",
+    "valor": 260000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "40018",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "AM4",
+    "valor": 560000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40019",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "AM4",
+    "valor": 560000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40020",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "LGA",
+    "valor": 540000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "40021",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "AM4",
+    "valor": 400000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40022",
+    "nombre": "Tarjeta Madre",
+    "marca": "Asus",
+    "Socket": "LGA",
+    "valor": 520000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40023",
+    "nombre": "Tarjeta Madre",
+    "marca": "Aorus",
+    "Socket": "AM4",
+    "valor": 430000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40024",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "LGA",
+    "valor": 320000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "40025",
+    "nombre": "Tarjeta Madre",
+    "marca": "Asus",
+    "Socket": "LGA",
+    "valor": 220000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "40026",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "AM4",
+    "valor": 360000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40027",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "AM4",
+    "valor": 460000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "40028",
+    "nombre": "Tarjeta Madre",
+    "marca": "Asus",
+    "Socket": "LGA",
+    "valor": 450000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40029",
+    "nombre": "Tarjeta Madre",
+    "marca": "Aorus",
+    "Socket": "AM4",
+    "valor": 310000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "40030",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "LGA",
+    "valor": 570000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "40031",
+    "nombre": "Tarjeta Madre",
+    "marca": "Msi",
+    "Socket": "AM4",
+    "valor": 590000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40032",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "LGA",
+    "valor": 320000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40033",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "LGA",
+    "valor": 310000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40034",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "LGA",
+    "valor": 440000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "40035",
+    "nombre": "Tarjeta Madre",
+    "marca": "Msi",
+    "Socket": "LGA",
+    "valor": 520000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "40036",
+    "nombre": "Tarjeta Madre",
+    "marca": "Asus",
+    "Socket": "LGA",
+    "valor": 450000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40037",
+    "nombre": "Tarjeta Madre",
+    "marca": "Asus",
+    "Socket": "AM4",
+    "valor": 220000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40038",
+    "nombre": "Tarjeta Madre",
+    "marca": "ASRock",
+    "Socket": "LGA",
+    "valor": 340000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40039",
+    "nombre": "Tarjeta Madre",
+    "marca": "Aorus",
+    "Socket": "LGA",
+    "valor": 440000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40040",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "AM4",
+    "valor": 340000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "40041",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "AM4",
+    "valor": 340000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "40042",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "AM4",
+    "valor": 440000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40043",
+    "nombre": "Tarjeta Madre",
+    "marca": "Msi",
+    "Socket": "LGA",
+    "valor": 270000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40044",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "LGA",
+    "valor": 440000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40045",
+    "nombre": "Tarjeta Madre",
+    "marca": "Asus",
+    "Socket": "LGA",
+    "valor": 300000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "40046",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "LGA",
+    "valor": 410000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "40047",
+    "nombre": "Tarjeta Madre",
+    "marca": "Gigabyte",
+    "Socket": "AM4",
+    "valor": 290000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "40048",
+    "nombre": "Tarjeta Madre",
+    "marca": "ROG",
+    "Socket": "LGA",
+    "valor": 320000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "40049",
+    "nombre": "Tarjeta Madre",
+    "marca": "Msi",
+    "Socket": "LGA",
+    "valor": 290000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "40050",
+    "nombre": "Tarjeta Madre",
+    "marca": "Msi",
+    "Socket": "AM4",
+    "valor": 500000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  }
+]

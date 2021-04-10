@@ -1,0 +1,502 @@
+[
+  {
+    "id": "20001",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "600",
+    "valor": 1020000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20002",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 4000",
+    "generacion": "600",
+    "valor": 890000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20003",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "400",
+    "valor": 540000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20004",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 5000",
+    "generacion": "700",
+    "valor": 1180000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "20005",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "600",
+    "valor": 330000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20006",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 5000",
+    "generacion": "400",
+    "valor": 320000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "20007",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "300",
+    "valor": 500000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "20008",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "400",
+    "valor": 460000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "20009",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 5000",
+    "generacion": "400",
+    "valor": 1070000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20010",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "400",
+    "valor": 890000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20011",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 3000",
+    "generacion": "500",
+    "valor": 350000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20012",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "500",
+    "valor": 490000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20013",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 4000",
+    "generacion": "600",
+    "valor": 1160000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "20014",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 5000",
+    "generacion": "300",
+    "valor": 460000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "20015",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 6000",
+    "generacion": "300",
+    "valor": 1110000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "20016",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 6000",
+    "generacion": "400",
+    "valor": 440000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20017",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 4000",
+    "generacion": "700",
+    "valor": 620000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20018",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 6000",
+    "generacion": "500",
+    "valor": 660000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "20019",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 3000",
+    "generacion": "400",
+    "valor": 520000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "20020",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 3000",
+    "generacion": "700",
+    "valor": 700000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "20021",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 6000",
+    "generacion": "300",
+    "valor": 910000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20022",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "600",
+    "valor": 1080000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20023",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 4000",
+    "generacion": "400",
+    "valor": 870000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "20024",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 5000",
+    "generacion": "500",
+    "valor": 570000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "20025",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "300",
+    "valor": 540000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "20026",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 6000",
+    "generacion": "700",
+    "valor": 550000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20027",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "400",
+    "valor": 830000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "20028",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "500",
+    "valor": 810000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20029",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 4000",
+    "generacion": "400",
+    "valor": 670000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20030",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 6000",
+    "generacion": "400",
+    "valor": 780000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "20031",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 5000",
+    "generacion": "500",
+    "valor": 460000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20032",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "600",
+    "valor": 1080000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "20033",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "700",
+    "valor": 680000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "20034",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 5000",
+    "generacion": "500",
+    "valor": 340000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20035",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 4000",
+    "generacion": "300",
+    "valor": 590000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "20036",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 6000",
+    "generacion": "400",
+    "valor": 1110000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "20037",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 5000",
+    "generacion": "600",
+    "valor": 1010000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20038",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "400",
+    "valor": 1090000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20039",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 4000",
+    "generacion": "600",
+    "valor": 640000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20040",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 5000",
+    "generacion": "600",
+    "valor": 1120000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "20041",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 4000",
+    "generacion": "600",
+    "valor": 650000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "20042",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 4000",
+    "generacion": "700",
+    "valor": 720000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20043",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "500",
+    "valor": 480000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "20044",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "500",
+    "valor": 850000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "20045",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 5000",
+    "generacion": "400",
+    "valor": 460000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "20046",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 4000",
+    "generacion": "500",
+    "valor": 990000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "20047",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 6000",
+    "generacion": "600",
+    "valor": 570000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "20048",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 4000",
+    "generacion": "600",
+    "valor": 730000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "20049",
+    "nombre": "Tarjeta Grafica",
+    "marca": "AMD",
+    "linea": "Radeon RX 4000",
+    "generacion": "700",
+    "valor": 930000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "20050",
+    "nombre": "Tarjeta Grafica",
+    "marca": "Nvidia",
+    "linea": "Radeon RX 3000",
+    "generacion": "300",
+    "valor": 1070000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  }
+]

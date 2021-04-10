@@ -1,0 +1,502 @@
+[
+  {
+    "id": "10001",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 3",
+    "generacion": "Ryzen 2000",
+    "valor": 420000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10002",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i9",
+    "generacion": "8va generacion",
+    "valor": 1060000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10003",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 9",
+    "generacion": "Ryzen 3000",
+    "valor": 730000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10004",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Pentium",
+    "generacion": "10ma generacion",
+    "valor": 880000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "10005",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 5",
+    "generacion": "Ryzen 3000",
+    "valor": 700000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "10006",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "11va generacion",
+    "valor": 950000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10007",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "8va generacion",
+    "valor": 680000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10008",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 5",
+    "generacion": "Ryzen 1000",
+    "valor": 840000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10009",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i7",
+    "generacion": "8va generacion",
+    "valor": 1250000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10010",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 3",
+    "generacion": "Ryzen 2000",
+    "valor": 850000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10011",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 7",
+    "generacion": "Ryzen 3000",
+    "valor": 460000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "10012",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Pentium",
+    "generacion": "11va generacion",
+    "valor": 980000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10013",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "10ma generacion",
+    "valor": 1130000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "10014",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i9",
+    "generacion": "8va generacion",
+    "valor": 1200000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "10015",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i3",
+    "generacion": "10ma generacion",
+    "valor": 780000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "10016",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i3",
+    "generacion": "9na generacion",
+    "valor": 750000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10017",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "8va generacion",
+    "valor": 750000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10018",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Pentium",
+    "generacion": "8va generacion",
+    "valor": 1030000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10019",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 5",
+    "generacion": "Ryzen 5000",
+    "valor": 800000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10020",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "8va generacion",
+    "valor": 690000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10021",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Pentium",
+    "generacion": "10ma generacion",
+    "valor": 1130000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "10022",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Athlon",
+    "generacion": "Ryzen 5000",
+    "valor": 1220000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10023",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i7",
+    "generacion": "11va generacion",
+    "valor": 640000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "10024",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 9",
+    "generacion": "Ryzen 5000",
+    "valor": 430000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10025",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 5",
+    "generacion": "Ryzen 5000",
+    "valor": 1100000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "10026",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 9",
+    "generacion": "Ryzen 2000",
+    "valor": 1120000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10027",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "9na generacion",
+    "valor": 680000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10028",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 7",
+    "generacion": "Ryzen 3000",
+    "valor": 1140000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10029",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 5",
+    "generacion": "Ryzen 2000",
+    "valor": 1160000,
+    "Estado": "Solo abierto",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "10030",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Pentium",
+    "generacion": "10ma generacion",
+    "valor": 600000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10031",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "9na generacion",
+    "valor": 1000000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10032",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "11va generacion",
+    "valor": 1170000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10033",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 3",
+    "generacion": "Ryzen 2000",
+    "valor": 1250000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10034",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i3",
+    "generacion": "9na generacion",
+    "valor": 940000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10035",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Athlon",
+    "generacion": "Ryzen 2000",
+    "valor": 530000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "10036",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i9",
+    "generacion": "9na generacion",
+    "valor": 510000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10037",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i7",
+    "generacion": "10ma generacion",
+    "valor": 410000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10038",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 7",
+    "generacion": "Ryzen 3000",
+    "valor": 450000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "10039",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 9",
+    "generacion": "Ryzen 3000",
+    "valor": 1030000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10040",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i9",
+    "generacion": "10ma generacion",
+    "valor": 1010000,
+    "Estado": "Usado",
+    "Garantia": "Sin garantia"
+  },
+  {
+    "id": "10041",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i5",
+    "generacion": "8va generacion",
+    "valor": 460000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10042",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i7",
+    "generacion": "10ma generacion",
+    "valor": 600000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10043",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 5",
+    "generacion": "Ryzen 5000",
+    "valor": 490000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 1 Meses"
+  },
+  {
+    "id": "10044",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 5",
+    "generacion": "Ryzen 3000",
+    "valor": 470000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 6 Meses"
+  },
+  {
+    "id": "10045",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 9",
+    "generacion": "Ryzen 1000",
+    "valor": 410000,
+    "Estado": "Solo abierto",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "10046",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Athlon",
+    "generacion": "Ryzen 2000",
+    "valor": 1230000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 3 Meses"
+  },
+  {
+    "id": "10047",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 9",
+    "generacion": "Ryzen 3000",
+    "valor": 630000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10048",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Athlon",
+    "generacion": "Ryzen 3000",
+    "valor": 920000,
+    "Estado": "Usado",
+    "Garantia": "Garantia 1 a\u00f1o"
+  },
+  {
+    "id": "10049",
+    "nombre": "Procesador",
+    "marca": "Intel",
+    "linea": "Core i7",
+    "generacion": "9na generacion",
+    "valor": 830000,
+    "Estado": "Nuevo",
+    "Garantia": "Garantia 2 Meses"
+  },
+  {
+    "id": "10050",
+    "nombre": "Procesador",
+    "marca": "AMD",
+    "linea": "Ryzen 5",
+    "generacion": "Ryzen 1000",
+    "valor": 610000,
+    "Estado": "Nuevo",
+    "Garantia": "Sin garantia"
+  }
+]
