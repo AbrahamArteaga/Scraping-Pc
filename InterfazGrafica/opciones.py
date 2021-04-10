@@ -1,5 +1,6 @@
 """
-Opciones a escoger
+Opciones a escoger de interfaz
+grafica.
 """
 
 OPCIONES_COMPONENTES = [
@@ -64,7 +65,8 @@ OPCIONES_GPU_LINEA_NVIDIA = [
     "Serie 20",
     "Serie 30"
 ]
-serie = ""
+
+SERIE = ""
 # OPCIONES_GPU_MODELO_NVIDIA = [
 #     "Todos los modelos",
 #     f"{serie}50",
