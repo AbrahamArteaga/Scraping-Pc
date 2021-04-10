@@ -7,20 +7,18 @@ OPCIONES_COMPONENTES = [
     "CPU",
     "GPU",
     "PSU",
+    "RAM",
     "Mother Board",
-    "RAM"
     "Unidad de almacenamiento"
 ]
 
 OPCIONES_CPU_MARCA = [
-    "Todas las marcas",
     "Todas las marcas",
     "Intel",
     "AMD"
 ]
 
 OPCIONES_CPU_LINEA_INTEL = [
-    "Todas las lineas",
     "Todas las lineas",
     "Pentium",
     "Core i3",
@@ -31,14 +29,12 @@ OPCIONES_CPU_LINEA_INTEL = [
 
 OPCIONES_CPU_GENERACION_INTEL = [
     "Todas las generaciones",
-    "Todas las generaciones",
     "8va generacion",
     "9na generacion",
     "10ma generacion"
 ]
 
 OPCIONES_CPU_LINEA_AMD = [
-    "Todas las lineas",
     "Todas las lineas",
     "Athlon",
     "Ryzen 3",
@@ -49,7 +45,6 @@ OPCIONES_CPU_LINEA_AMD = [
 
 OPCIONES_CPU_GENERACION_AMD = [
     "Todas las generaciones",
-    "Todas las generaciones",
     "Ryzen 1000",
     "Ryzen 2000",
     "Ryzen 3000",
@@ -58,13 +53,11 @@ OPCIONES_CPU_GENERACION_AMD = [
 
 OPCIONES_GPU_MARCA = [
     "Todas las marcas",
-    "Todas las marcas",
     "Nvidia",
     "AMD"
 ]
 
 OPCIONES_GPU_LINEA_NVIDIA = [
-    "Todas las lineas",
     "Todas las lineas",
     "Serie 10",
     "Serie 16",
@@ -72,23 +65,20 @@ OPCIONES_GPU_LINEA_NVIDIA = [
     "Serie 30"
 ]
 serie = ""
-OPCIONES_GPU_MODELO_NVIDIA = [
-    "Todos los modelos",
-    "Todos los modelos",
-    f"{serie}50",
-    f"{serie}50ti",
-    f"{serie}60",
-    f"{serie}60ti",
-    f"{serie}70",
-    f"{serie}70ti",
-    f"{serie}80ti",
-    f"{serie}90"
-]
+# OPCIONES_GPU_MODELO_NVIDIA = [
+#     "Todos los modelos",
+#     f"{serie}50",
+#     f"{serie}50ti",
+#     f"{serie}60",
+#     f"{serie}60ti",
+#     f"{serie}70",
+#     f"{serie}70ti",
+#     f"{serie}80ti",
+#     f"{serie}90"
+# ]
 
 OPCIONES_GPU_LINEA_AMD = [
     "Todas las lineas",
-    "Todas las lineas",
-    "Todos los modelos",
     "Radeon RX 3000",
     "Radeon RX 4000",
     "Radeon RX 5000",
@@ -96,7 +86,6 @@ OPCIONES_GPU_LINEA_AMD = [
 ]
 
 OPCIONES_GPU_MODELO_AMD = [
-    "Todos los modelos",
     "Todos los modelos",
     "300",
     "400",
@@ -107,14 +96,12 @@ OPCIONES_GPU_MODELO_AMD = [
 
 OPCIONES_RAM_MARCA = [
     "Todas las marcas",
-    "Todas las marcas",
     "Crucial",
     "HyperX",
     "Corsair"
 ]
 
 OPCIONES_RAM_CAPACIDAD = [
-    "Todas las capacidades",
     "Todas las capacidades",
     "2 GB",
     "4 GB",
@@ -124,7 +111,6 @@ OPCIONES_RAM_CAPACIDAD = [
 
 OPCIONES_RAM_FRECUENCIA = [
     "Todas las frecuencias",
-    "Todas las frecuencias",
     "2400 Mhz",
     "2777 Mhz",
     "3000 Mhz",
@@ -132,7 +118,6 @@ OPCIONES_RAM_FRECUENCIA = [
 ]
 
 OPCIONES_MOTHER_BOARD_MARCA = [
-    "Todas las marcas",
     "Todas las marcas",
     "Aorus",
     "ASRock",
@@ -144,13 +129,11 @@ OPCIONES_MOTHER_BOARD_MARCA = [
 
 OPCIONES_MOTHER_BOARD_SOCKET = [
     "Todos los sockets",
-    "Todos los sockets",
     "LGA",
     "AM4"
 ]
 
 OPCIONES_PSU_MARCA = [
-    "Todas las marcas",
     "Todas las marcas",
     "Aorus",
     "ASRock",
@@ -161,7 +144,6 @@ OPCIONES_PSU_MARCA = [
 ]
 
 OPCIONES_PSU_POTENCIA = [
-    "Todas las potencias",
     "Todas las potencias",
     "400W",
     "500W",
@@ -174,7 +156,6 @@ OPCIONES_PSU_POTENCIA = [
 
 OPCIONES_PSU_CERTIFICACION = [
     "Todas las certificaciones",
-    "Todas las certificaciones",
     "80+ White",
     "80+ Bronze",
     "80+ Silver",
@@ -184,7 +165,6 @@ OPCIONES_PSU_CERTIFICACION = [
 ]
 
 OPCIONES_UNIDAD_ALMACENAMIENTO_MARCA = [
-    "Todas las marcas",
     "Todas las marcas",
     "SanDisk",
     "Kingston",
@@ -196,7 +176,6 @@ OPCIONES_UNIDAD_ALMACENAMIENTO_MARCA = [
 
 OPCIONES_UNIDAD_ALMACENAMIENTO_CAPACIDAD = [
     "Todas las capacidades",
-    "Todas las capacidades",
     "250 GB",
     "500 GB",
     "1 TB",
@@ -205,7 +184,6 @@ OPCIONES_UNIDAD_ALMACENAMIENTO_CAPACIDAD = [
 ]
 
 OPCIONES_UNIDAD_ALMACENAMIENTO_TIPO = [
-    "Todos los tipos",
     "Todos los tipos",
     "HDD",
     "SSD",
@@ -216,7 +194,8 @@ OPCIONES_ESTADO = [
     "Todos los estados",
     "Todos los estados",
     "Nuevo",
-    "Solo abierto"
+    "Solo abierto",
+    "Usado"
 ]
 
 OPCIONES_GARANTIA_MINIMA = [
@@ -225,7 +204,8 @@ OPCIONES_GARANTIA_MINIMA = [
     "Garantia 6 Meses",
     "Garantia 1 año",
     "Garantia 2 años",
-    "Garantia de por vida"
+    "Garantia de por vida",
+    "Sin garantia"
 ]
 
 OPCIONES_VACIAS = [
