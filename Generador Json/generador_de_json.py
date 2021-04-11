@@ -1,3 +1,8 @@
+"""
+Modulo generador encargado de crear
+los JSON de los componentes
+"""
+
 import json
 import random
 
@@ -33,7 +38,8 @@ total =[
             ["Nvidia", "AMD"],
 
             ["Serie 10", "Serie 16","Serie 20", "Serie 30"],
-            ["Nvidia50", "Nvidia50ti", "Nvidia60", "Nvidia60ti","Nvidia70", "Nvidia70ti", "Nvidia80ti"],
+            ["Nvidia50", "Nvidia50ti", "Nvidia60", "Nvidia60ti","Nvidia70",
+             "Nvidia70ti", "Nvidia80ti"],
 
             ["Radeon RX 3000", "Radeon RX 4000", "Radeon RX 5000","Radeon RX 6000"],
             ["300", "400", "500", "600", "700"]
@@ -60,10 +66,16 @@ total =[
             ["SanDisk", "Kingston", "Samsung", "Adata", "Crucial", "WD"],
             ["250 GB", "500 GB", "1 TB", "2TB", "4 TB"],
             ["HDD", "SSD", "NVME M.2"]
-        ] 
+        ]
     ]
 
-def CPU(veces,Termnacion,nombre,CODIGOPRO):   
+def generar_cpu(veces,terminacion,nombre,codigo_de_producto):
+
+    """
+    Funcion encargada de generar los JSON
+    de la CPU
+    """
+
     datos=[]
     def generar (tipo):
 
@@ -74,31 +86,38 @@ def CPU(veces,Termnacion,nombre,CODIGOPRO):
         else:
             linea = random.choice(total[2][3])
             generacion = random.choice(total[2][4])
- 
-        Estado = random.choice(total[0])
+
+        estado = random.choice(total[0])
         if marca == "Usado":
-            Garantia = "Sin garantia"
+            garantia = "Sin garantia"
         else:
-            Garantia = random.choice(total[1])
+            garantia = random.choice(total[1])
         tipo = {
-            "id":CODIGOPRO+str(tipo).zfill(4),
+            "id":codigo_de_producto+str(tipo).zfill(4),
             "nombre":nombre,
             "marca": marca,
             "linea":linea,
             "generacion":generacion,
             "valor": random.randrange(400000, 1300000,10000),
-            "Estado": Estado,
-            "Garantia": Garantia
-        } 
+            "Estado": estado,
+            "Garantia": garantia
+        }
         datos.append(tipo)
 
     for contador in range(1,veces+1) :
         generar(contador)
     data_string = json.dumps(datos)
-    a = open("Scraping-Pc/JsonGenerados/datos_"+ Termnacion +".json", "w")
-    a.write(data_string)
-    a.close()
-def GPU(veces,Termnacion,nombre,CODIGOPRO):   
+    almacenamiento_cpu = open("Scraping-Pc/JsonGenerados/datos_"+ terminacion +".json", "w")
+    almacenamiento_cpu.write(data_string)
+    almacenamiento_cpu.close()
+
+def generar_gpu(veces,terminacion,nombre,codigo_de_producto):
+
+    """
+    Funcion encargada de generar los JSON
+    de la GPU
+    """
+
     datos=[]
     def generar (tipo):
         marca = random.choice(total[3][0])
@@ -108,30 +127,37 @@ def GPU(veces,Termnacion,nombre,CODIGOPRO):
         else:
             linea = random.choice(total[3][3])
             generacion = random.choice(total[3][4])
-        Estado = random.choice(total[0])
+        estado = random.choice(total[0])
         if marca == "Usado":
-            Garantia = "Sin garantia"
+            garantia = "Sin garantia"
         else:
-            Garantia = random.choice(total[1])
+            garantia = random.choice(total[1])
         tipo = {
-            "id":CODIGOPRO+str(tipo).zfill(4),
+            "id":codigo_de_producto+str(tipo).zfill(4),
             "nombre":nombre,
             "marca": marca,
             "linea":linea,
             "generacion":generacion,
             "valor": random.randrange(300000, 1200000,10000),
-            "Estado": Estado,
-            "Garantia": Garantia
-        } 
+            "Estado": estado,
+            "Garantia": garantia
+        }
         datos.append(tipo)
 
     for contador in range(1,veces+1) :
         generar(contador)
     data_string = json.dumps(datos)
-    a = open("Scraping-Pc/JsonGenerados/datos_"+ Termnacion +".json", "w")
-    a.write(data_string)
-    a.close()
-def RAM(veces,Termnacion,nombre,CODIGOPRO):   
+    almacenamiento_gpu = open("Scraping-Pc/JsonGenerados/datos_"+ terminacion +".json", "w")
+    almacenamiento_gpu.write(data_string)
+    almacenamiento_gpu.close()
+
+def generar_ram(veces,terminacion,nombre,codigo_de_producto):
+
+    """
+    Funcion encargada de generar los JSON
+    de la RAM
+    """
+
     datos=[]
     def generar (tipo):
 
@@ -139,30 +165,37 @@ def RAM(veces,Termnacion,nombre,CODIGOPRO):
         capacidad = random.choice(total[4][1])
         frecuencia = random.choice(total[4][2])
 
-        Estado = random.choice(total[0])
+        estado = random.choice(total[0])
         if marca == "Usado":
-            Garantia = "Sin garantia"
+            garantia = "Sin garantia"
         else:
-            Garantia = random.choice(total[1])
+            garantia = random.choice(total[1])
         tipo = {
-            "id":CODIGOPRO+str(tipo).zfill(4),
+            "id":codigo_de_producto+str(tipo).zfill(4),
             "nombre":nombre,
             "marca": marca,
             "capacidad":capacidad,
             "frecuencia":frecuencia,
             "valor": random.randrange(120000,500000,50000),
-            "Estado": Estado,
-            "Garantia": Garantia
-        } 
+            "Estado": estado,
+            "Garantia": garantia
+        }
         datos.append(tipo)
 
     for contador in range(1,veces+1) :
         generar(contador)
     data_string = json.dumps(datos)
-    a = open("Scraping-Pc/JsonGenerados/datos_"+ Termnacion +".json", "w")
-    a.write(data_string)
-    a.close()
-def PSU(veces,Termnacion,nombre,CODIGOPRO):   
+    almacenamiento_ram = open("Scraping-Pc/JsonGenerados/datos_"+ terminacion +".json", "w")
+    almacenamiento_ram.write(data_string)
+    almacenamiento_ram.close()
+
+def generar_psu(veces,terminacion,nombre,codigo_de_producto):
+
+    """
+    Funcion encargada de generar los JSON
+    de la PSU
+    """
+
     datos=[]
     def generar (tipo):
 
@@ -170,31 +203,38 @@ def PSU(veces,Termnacion,nombre,CODIGOPRO):
         capacidad = random.choice(total[6][1])
         frecuencia = random.choice(total[6][2])
 
-        Estado = random.choice(total[0])
+        estado = random.choice(total[0])
         if marca == "Usado":
-            Garantia = "Sin garantia"
+            garantia = "Sin garantia"
         else:
-            Garantia = random.choice(total[1])
+            garantia = random.choice(total[1])
         tipo = {
 
-            "id":CODIGOPRO+str(tipo).zfill(4),
+            "id":codigo_de_producto+str(tipo).zfill(4),
             "nombre":nombre,
             "marca": marca,
             "Potencia":capacidad,
             "Certificacion":frecuencia,
             "valor": random.randrange(100000, 400000,10000),
-            "Estado": Estado,
-            "Garantia": Garantia
-        } 
+            "Estado": estado,
+            "Garantia": garantia
+        }
         datos.append(tipo)
 
     for contador in range(1,veces+1) :
         generar(contador)
     data_string = json.dumps(datos)
-    a = open("Scraping-Pc/JsonGenerados/datos_"+ Termnacion +".json", "w")
-    a.write(data_string)
-    a.close()
-def ROM(veces,Termnacion,nombre,CODIGOPRO):   
+    almacenamiento_psu = open("Scraping-Pc/JsonGenerados/datos_"+ terminacion +".json", "w")
+    almacenamiento_psu.write(data_string)
+    almacenamiento_psu.close()
+
+def generar_rom(veces,terminacion,nombre,codigo_de_producto):
+
+    """
+    Funcion encargada de generar los JSON
+    de la ROM
+    """
+
     datos=[]
     def generar (tipo):
 
@@ -202,69 +242,71 @@ def ROM(veces,Termnacion,nombre,CODIGOPRO):
         capacidad = random.choice(total[7][1])
         frecuencia = random.choice(total[7][2])
 
-        Estado = random.choice(total[0])
+        estado = random.choice(total[0])
         if marca == "Usado":
-            Garantia = "Sin garantia"
+            garantia = "Sin garantia"
         else:
-            Garantia = random.choice(total[1])
+            garantia = random.choice(total[1])
         tipo = {
 
-            "id":CODIGOPRO+str(tipo).zfill(4),
+            "id":codigo_de_producto+str(tipo).zfill(4),
             "nombre":nombre,
-
             "marca": marca,
             "Capacidad":capacidad,
             "Tipo":frecuencia,
-
             "valor": random.randrange(150000, 450000,25000),
-            "Estado": Estado,
-            "Garantia": Garantia
-        } 
+            "Estado": estado,
+            "Garantia": garantia
+        }
         datos.append(tipo)
 
     for contador in range(1,veces+1) :
         generar(contador)
     data_string = json.dumps(datos)
-    a = open("Scraping-Pc/JsonGenerados/datos_"+ Termnacion +".json", "w")
-    a.write(data_string)
-    a.close()
-def MOTHER(veces,Termnacion,nombre,CODIGOPRO):   
+    almacenamiento_rom = open("Scraping-Pc/JsonGenerados/datos_"+ terminacion +".json", "w")
+    almacenamiento_rom.write(data_string)
+    almacenamiento_rom.close()
+
+def generar_mother(veces,terminacion,nombre,codigo_de_producto):
+
+    """
+    Funcion encargada de generar los JSON
+    de la mother board
+    """
+
     datos=[]
     def generar (tipo):
 
         marca = random.choice(total[5][0])
         capacidad = random.choice(total[5][1])
 
-        Estado = random.choice(total[0])
+        estado = random.choice(total[0])
         if marca == "Usado":
-            Garantia = "Sin garantia"
+            garantia = "Sin garantia"
         else:
-            Garantia = random.choice(total[1])
+            garantia = random.choice(total[1])
         tipo = {
 
-            "id":CODIGOPRO+str(tipo).zfill(4),
+            "id":codigo_de_producto+str(tipo).zfill(4),
             "nombre":nombre,
-
             "marca": marca,
             "Socket":capacidad,
-
-
             "valor": random.randrange(170000, 600000,10000),
-            "Estado": Estado,
-            "Garantia": Garantia
-        } 
+            "Estado": estado,
+            "Garantia": garantia
+        }
         datos.append(tipo)
 
     for contador in range(1,veces+1) :
         generar(contador)
     data_string = json.dumps(datos)
-    a = open("Scraping-Pc/JsonGenerados/datos_"+ Termnacion +".json", "w")
-    a.write(data_string)
-    a.close()
+    almacenamiento_mother = open("Scraping-Pc/JsonGenerados/datos_"+ terminacion +".json", "w")
+    almacenamiento_mother.write(data_string)
+    almacenamiento_mother.close()
 
-CPU(50,"CPU","Procesador","1")
-GPU(50,"GPU","Tarjeta Grafica","2")
-RAM(50,"RAM","Tarjeta Ram","3")
-MOTHER(50,"MOTHER","Tarjeta Madre","4")
-PSU(50,"PSU","Fuente","5")
-ROM(50,"ROM","Disco Duro","6")
+generar_cpu(50,"CPU","Procesador","1")
+generar_gpu(50,"GPU","Tarjeta Grafica","2")
+generar_ram(50,"RAM","Tarjeta Ram","3")
+generar_mother(50,"MOTHER","Tarjeta Madre","4")
+generar_psu(50,"PSU","Fuente","5")
+generar_rom(50,"ROM","Disco Duro","6")
