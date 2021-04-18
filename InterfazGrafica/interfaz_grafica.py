@@ -11,6 +11,7 @@ por que los tkinter estan importando
 en total 157 funciones y clases.
 
     ATT: Francisco
+    igual no afecta en el rendimiento y no es que haga mas pesado el archivo 
 """
 
 from tkinter import *
