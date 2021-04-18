@@ -57,6 +57,15 @@ class Cola:
         self.fila.pop(0)
         self.inicial = self.fila[0]
 
+    def esta_vacia(self):
+        pass
+
+    def vaciar(self):
+        pass
+
+    def imprimir(self):
+        pass
+
     def __str__(self):
         return str(self.fila)
 

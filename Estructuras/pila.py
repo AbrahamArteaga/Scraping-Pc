@@ -52,6 +52,15 @@ class Pila:
             self.stack.pop()
             self.cabeza = self.stack[-1]
 
+    def esta_vacia(self):
+        pass
+
+    def vaciar(self):
+        pass
+
+    def imprimir(self):
+        pass
+
     def __str__(self):
         return str(self.stack)
 
