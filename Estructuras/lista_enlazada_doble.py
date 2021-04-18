@@ -1,3 +1,11 @@
+"""
+Este es el modulo de
+lista enlazada doble, aqui
+se implementa nuestra
+estructura de datos propia
+"""
+
+
 class Nodo:
 
     """
@@ -12,10 +20,10 @@ class Nodo:
         self.previo = None
 
 
-class ListaEnlazadasCircularesDobles:
+class ListaEnlazadaDoble:
 
     """
-    Nombre: DobleListaEnlazada
+    Nombre: ListaEnlazadaDoble
     Atributos: Primero, Ultimo
     Metodo: insertar_final, guardar_lista
     """
@@ -28,7 +36,7 @@ class ListaEnlazadasCircularesDobles:
 
         """
         Metodo encargado de insertar un dato
-        al final de la doble lista enlazada
+        al final de la lista enlazada doble
         """
 
         dato = Nodo(data)
@@ -42,13 +50,45 @@ class ListaEnlazadasCircularesDobles:
         return None
 
     def leer_elemento_posicion_k(self, k):
-        pass
+        contador = 0
+        nodo_actual = self.primero
+        while contador < k:
+            contador += 1
+            if nodo_actual.siguiente:
+                nodo_actual = nodo_actual.siguiente
+            else:
+                return "la posicion esta fuera de rango"
+        return nodo_actual.data
 
-    def insertar_elemento_posicion_k(self, k):
-        pass
+    def insertar_elemento_posicion_k(self, k, data):
+        dato = Nodo(data)
+        contador = 0
+        nodo_actual = self.primero
+        while contador != k - 1:
+            contador += 1
+            if nodo_actual.siguiente:
+                nodo_actual = nodo_actual.siguiente
+            else:
+                return "la posicion esta fuera de rango"
+        dato.siguiente = nodo_actual.siguiente
+        nodo_actual.siguiente = dato
+        return 0
 
     def eliminar_elemento_posicion_k(self, k):
-        pass
+        contador = 0
+        nodo_actual = self.primero
+        while contador != k - 1:
+            contador += 1
+            if nodo_actual.siguiente:
+                nodo_actual = nodo_actual.siguiente
+            else:
+                return "la posicion esta fuera de rango"
+        if nodo_actual.siguiente.siguiente:
+            data = nodo_actual.siguiente.data
+            nodo_actual.siguiente = nodo_actual.siguiente.siguiente
+        else:
+            nodo_actual.siguiente = None
+        return data
 
     def guardar_lista(self):
 
@@ -64,3 +104,5 @@ class ListaEnlazadasCircularesDobles:
             nodo_actual = nodo_actual.siguiente
         guardar += "\n"
         return guardar
+
+

@@ -43,20 +43,54 @@ class ListaEnlazadaCircularDoble:
         if not self.primero:
             self.primero = dato
             self.ultimo = dato
+            self.ultimo.siguiente = self.primero
             return 0
         dato.previo = self.ultimo
         self.ultimo.siguiente = dato
         self.ultimo = dato
+        self.ultimo.siguiente = self.primero
+        self.primero.previo = self.ultimo
         return None
 
     def leer_elemento_posicion_k(self, k):
-        pass
+        contador = 0
+        nodo_actual = self.primero
+        while contador < k:
+            contador += 1
+            if nodo_actual.siguiente:
+                nodo_actual = nodo_actual.siguiente
+            else:
+                return "la posicion esta fuera de rango"
+        return nodo_actual.data
 
-    def insertar_elemento_posicion_k(self, k):
-        pass
+    def insertar_elemento_posicion_k(self, k, data):
+        dato = Nodo(data)
+        contador = 0
+        nodo_actual = self.primero
+        while contador != k - 1:
+            contador += 1
+            if nodo_actual.siguiente:
+                nodo_actual = nodo_actual.siguiente
+            else:
+                return "la posicion esta fuera de rango"
+        dato.siguiente = nodo_actual.siguiente
+        nodo_actual.siguiente = dato
+        return 0
 
     def eliminar_elemento_posicion_k(self, k):
-        pass
+        contador = 0
+        nodo_actual = self.primero
+        while contador != k - 1:
+            contador += 1
+            if nodo_actual.siguiente:
+                nodo_actual = nodo_actual.siguiente
+            else:
+                return "la posicion esta fuera de rango"
+        if nodo_actual.siguiente.siguiente:
+            nodo_actual.siguiente = nodo_actual.siguiente.siguiente
+        else:
+            nodo_actual.siguiente = None
+        return 0
 
     def guardar_lista(self):
 
@@ -70,5 +104,8 @@ class ListaEnlazadaCircularDoble:
         while nodo_actual:
             guardar += str(nodo_actual.data) + " "
             nodo_actual = nodo_actual.siguiente
+            if nodo_actual == self.primero:
+                break
         guardar += "\n"
         return guardar
+

@@ -9,7 +9,7 @@ estructura de datos propia
 class Nodo:
     """
     Nombre de clase: Nodo
-    Atributos: data, siguiente, previo
+    Atributos: data, siguiente
     Metodos: Constructor
     """
 
@@ -21,7 +21,7 @@ class Nodo:
 class ListaEnlazadaCircularSimple:
 
     """
-    Nombre: DobleListaEnlazada
+    Nombre: ListaEnlazadaCircularSimple
     Atributos: Primero, Ultimo
     Metodo: insertar_final, guardar_lista
     """
@@ -34,27 +34,49 @@ class ListaEnlazadaCircularSimple:
 
         """
         Metodo encargado de insertar un dato
-        al final de la doble lista enlazada
+        al final de la lista enlazada circular simple
         """
 
         dato = Nodo(data)
         if not self.primero:
             self.primero = dato
             self.ultimo = dato
+            self.ultimo.siguiente = self.primero
             return 0
         dato.previo = self.ultimo
         self.ultimo.siguiente = dato
         self.ultimo = dato
+        self.ultimo.siguiente = self.primero
         return None
 
     def leer_elemento_posicion_k(self, k):
-        pass
+        contador = 0
+        nodo_actual = self.primero
+        while contador < k:
+            contador += 1
+            nodo_actual = nodo_actual.siguiente
+        return nodo_actual.data
 
-    def insertar_elemento_posicion_k(self, k):
-        pass
+    def insertar_elemento_posicion_k(self, k, data):
+        dato = Nodo(data)
+        contador = 0
+        nodo_actual = self.primero
+        while contador != k - 1:
+            contador += 1
+            nodo_actual = nodo_actual.siguiente
+        dato.siguiente = nodo_actual.siguiente
+        nodo_actual.siguiente = dato
+        return 0
 
     def eliminar_elemento_posicion_k(self, k):
-        pass
+        contador = 0
+        nodo_actual = self.primero
+        while contador != k - 1:
+            contador += 1
+            nodo_actual = nodo_actual.siguiente
+        data = nodo_actual.siguiente.data
+        nodo_actual.siguiente = nodo_actual.siguiente.siguiente
+        return data
 
     def guardar_lista(self):
 
@@ -68,5 +90,10 @@ class ListaEnlazadaCircularSimple:
         while nodo_actual:
             guardar += str(nodo_actual.data) + " "
             nodo_actual = nodo_actual.siguiente
+            if nodo_actual == self.primero:
+                break
         guardar += "\n"
         return guardar
+
+
+
