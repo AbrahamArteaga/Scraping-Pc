@@ -1,6 +1,6 @@
 """
 Este es el modulo de
-lista enlazada, aqui
+lista enlazada circular simple, aqui
 se implementa nuestra
 estructura de datos propia
 """
@@ -18,7 +18,7 @@ class Nodo:
         self.siguiente = None
 
 
-class ListasEnlazadas:
+class ListaEnlazadaCircularSimple:
 
     """
     Nombre: DobleListaEnlazada
@@ -46,6 +46,15 @@ class ListasEnlazadas:
         self.ultimo.siguiente = dato
         self.ultimo = dato
         return None
+
+    def leer_elemento_posicion_k(self, k):
+        pass
+
+    def insertar_elemento_posicion_k(self, k):
+        pass
+
+    def eliminar_elemento_posicion_k(self, k):
+        pass
 
     def guardar_lista(self):
 
