@@ -28,7 +28,7 @@ class Pila:
 
         return self.cabeza
 
-    def agregar(self, elemento):
+    def enpilar(self, elemento):
 
         """
         Esta funcion agrega
@@ -38,7 +38,7 @@ class Pila:
         self.cabeza = elemento
         self.stack.append(elemento)
 
-    def remover(self):
+    def desenpilar(self):
 
         """
         Remueve solamente la cabeza,

@@ -37,7 +37,7 @@ class Cola:
 
         return self.final
 
-    def agregar(self, elemento):
+    def enfilar(self, elemento):
 
         """
         Funcion para agregar
@@ -47,7 +47,7 @@ class Cola:
         self.fila.append(elemento)
         self.final = elemento
 
-    def remover(self):
+    def desenfilar(self):
 
         """
         Funcion para eliminar el dato
