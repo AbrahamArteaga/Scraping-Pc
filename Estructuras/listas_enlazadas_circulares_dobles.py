@@ -1,12 +1,13 @@
 """
 Este es el modulo de
-lista enlazada, aqui
+doble lista enlazada, aqui
 se implementa nuestra
 estructura de datos propia
 """
 
 
 class Nodo:
+
     """
     Nombre de clase: Nodo
     Atributos: data, siguiente, previo
@@ -16,9 +17,10 @@ class Nodo:
     def __init__(self, data):
         self.data = data
         self.siguiente = None
+        self.previo = None
 
 
-class ListaEnlazada:
+class ListaEnlazadasCircularesDobles:
 
     """
     Nombre: DobleListaEnlazada
