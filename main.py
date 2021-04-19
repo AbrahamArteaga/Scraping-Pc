@@ -9,7 +9,7 @@ Modulos que se importan: interfaz.py
 
 """
 
-import interfaz
+from interfaz import *
 
 
 def buscar_componente():
@@ -19,18 +19,18 @@ def buscar_componente():
     se llama a la funcion correspondiente
     """
 
-    componente = interfaz.pedir_info("Elija el componente que desea buscar: ",
+    componente = pedir_info("Elija el componente que desea buscar: ",
                                      "CPU", "GPU", "Tarjeta madre", "PSU", "Modulo RAM")
     if componente == "CPU":
-        interfaz.datos_cpu()
+        datos_cpu()
     elif componente == "GPU":
-        interfaz.datos_gpu()
+        datos_gpu()
     elif componente == "Tarjeta madre":
-        interfaz.datos_mother()
+        datos_mother()
     elif componente == "PSU":
-        interfaz.datos_psu()
+        datos_psu()
     elif componente == "Modulo RAM":
-        interfaz.datos_ram()
+        datos_ram()
 
 
 buscar_componente()

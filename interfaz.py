@@ -5,7 +5,7 @@ la comunicación entre el usuario y la aplicación.
 Modulos que se importan: busquedas.py
 """
 
-import busquedas
+from busquedas import *
 
 
 def pedir_info(texto, *opciones):
@@ -50,10 +50,9 @@ def datos_cpu():
                           "Garantia 2 años", "Garantia de por vida")
 
     print("Se empieza a buscar el procesador bajo los parametros:" + "\nMarca: ", marca +
-          "\nLinea: ", linea + "\nGeneracion: ", generacion + "\nEstado: ", estado + "\nGarantia: "
-          , garantia)
+          "\nLinea: ", linea + "\nGeneracion: ", generacion + "\nEstado: ", estado + "\nGarantia: ", garantia)
 
-    busquedas.buscar_cpu()
+    buscar_cpu()
 
 
 def datos_gpu():
@@ -81,7 +80,7 @@ def datos_gpu():
     print("Se empieza a buscar el GPU bajo los parametros:" + "\nMarca: ", marca +
           "\nLinea: ", linea + "\nModelo: ", modelo + "\nEstado: ", estado + "\nGarantia: ",
           garantia)
-    busquedas.buscar_gpu()
+    buscar_gpu()
 
 
 def datos_ram():
@@ -103,7 +102,7 @@ def datos_ram():
     print("Se empieza a buscar la memoria RAM bajo los parametros:" + "\nMarca: ", marca +
           "\nCapacidad: ", capacidad + "\nFrecuencia: ", frecuencia + "\nEstado: ", estado +
           "\nGarantia: ", garantia)
-    busquedas.buscar_ram()
+    buscar_ram()
 
 
 def datos_mother():
@@ -121,7 +120,7 @@ def datos_mother():
                           "Garantia 1 año", "Garantia 2 años", "Garantia de por vida")
     print("Se empieza a buscar la memoria motherboard bajo los parametros:" + "\nMarca: ", marca +
           "\nSocket: ", socket + "\nEstado: ", estado + "\nGarantia: ", garantia)
-    busquedas.buscar_mother()
+    buscar_mother()
 
 
 def datos_psu():
@@ -143,7 +142,7 @@ def datos_psu():
     print("Se empieza a buscar la memoria motherboard bajo los parametros:" + "\nMarca: ",
           marca + "\nPotencia: ", potencia + "\nCertificacion: ", certificacion + "\nEstado: ",
           estado + "\nGarantia: ", garantia)
-    busquedas.buscar_psu()
+    buscar_psu()
 
 
 def datos_disco():
