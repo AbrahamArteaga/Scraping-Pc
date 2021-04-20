@@ -1,7 +1,11 @@
 """
 Modulo principal de la GUI
 """
-
+from tkinter import *
+from tkinter.ttk import *
+from tkinter.font import *
+from InterfazGrafica.opciones import *
+from busquedas import *
 """
 Chicos, una vez terminen de usar
 los paquetes de importacion en general,
@@ -13,11 +17,6 @@ en total 157 funciones y clases.
     ATT: Francisco
     igual no afecta en el rendimiento y no es que haga mas pesado el archivo 
 """
-
-from tkinter import *
-from tkinter.ttk import *
-from tkinter.font import *
-from opciones import *
 
 
 # Funciones principales de la GUI
@@ -82,7 +81,9 @@ etiqueta.place(relx=0.5, rely=0.3, anchor=CENTER)
 
 # Pestaña de busqueda
 
-
+opciones_marca = ["..."]
+opciones_p = ["..."]
+opciones_s = ["..."]
 # Menu de opciones Componentes
 
 
@@ -98,7 +99,7 @@ def configurar_menu(variable, boton, opciones):
 
 
 def establecer_componente(componente):
-
+    global opciones_marca, opciones_p, opciones_s
     """
     Funcion para establecer el componente
     a ser seleccionado.
@@ -109,11 +110,13 @@ def establecer_componente(componente):
         configurar_menu(variable_marca, boton_menu_marca, OPCIONES_CPU_MARCA)
         configurar_menu(variable_primer_parametro, boton_menu_primer_parametro, OPCIONES_VACIAS)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_VACIAS)
+        opciones_marca = OPCIONES_CPU_MARCA
 
     elif componente == "GPU":
         configurar_menu(variable_marca, boton_menu_marca, OPCIONES_GPU_MARCA)
         configurar_menu(variable_primer_parametro, boton_menu_primer_parametro, OPCIONES_VACIAS)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_VACIAS)
+        opciones_marca = OPCIONES_GPU_MARCA
 
     elif componente == "PSU":
         configurar_menu(variable_marca, boton_menu_marca, OPCIONES_PSU_MARCA)
@@ -121,6 +124,9 @@ def establecer_componente(componente):
                         OPCIONES_PSU_POTENCIA)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro,
                         OPCIONES_PSU_CERTIFICACION)
+        opciones_marca = OPCIONES_PSU_MARCA
+        opciones_p = OPCIONES_PSU_POTENCIA
+        opciones_s = OPCIONES_PSU_CERTIFICACION
 
     elif componente == "RAM":
         variable_marca.set(OPCIONES_RAM_MARCA[0])
@@ -129,6 +135,9 @@ def establecer_componente(componente):
                         OPCIONES_RAM_CAPACIDAD)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro,
                         OPCIONES_RAM_FRECUENCIA)
+        opciones_marca = OPCIONES_RAM_MARCA
+        opciones_p = OPCIONES_RAM_CAPACIDAD
+        opciones_s = OPCIONES_RAM_FRECUENCIA
 
     elif componente == "Mother Board":
         variable_marca.set(OPCIONES_MOTHER_BOARD_MARCA[0])
@@ -136,6 +145,9 @@ def establecer_componente(componente):
         configurar_menu(variable_primer_parametro, boton_menu_primer_parametro,
                         OPCIONES_MOTHER_BOARD_SOCKET)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_VACIAS)
+        opciones_marca = OPCIONES_MOTHER_BOARD_MARCA
+        opciones_p = OPCIONES_MOTHER_BOARD_SOCKET
+        opciones_s = ["..."]
 
     elif componente == "Unidad de almacenamiento":
         configurar_menu(variable_marca, boton_menu_marca, OPCIONES_UNIDAD_ALMACENAMIENTO_MARCA)
@@ -143,6 +155,9 @@ def establecer_componente(componente):
                         OPCIONES_UNIDAD_ALMACENAMIENTO_CAPACIDAD)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro,
                         OPCIONES_UNIDAD_ALMACENAMIENTO_TIPO)
+        opciones_marca = OPCIONES_UNIDAD_ALMACENAMIENTO_MARCA
+        opciones_p = OPCIONES_UNIDAD_ALMACENAMIENTO_CAPACIDAD
+        opciones_s = OPCIONES_UNIDAD_ALMACENAMIENTO_TIPO
 
 
 variable_componentes = StringVar(pestanna_busqueda)
@@ -158,7 +173,7 @@ boton_menu_componente.grid(row=1, column=1)
 
 
 def establecer_marca(marca):
-
+    global opciones_marca, opciones_p, opciones_s
     """
     Esta funcion establece la marca
     a del componente seleccionado
@@ -169,24 +184,29 @@ def establecer_marca(marca):
                         OPCIONES_CPU_LINEA_INTEL)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro,
                         OPCIONES_CPU_GENERACION_INTEL)
+        opciones_p = OPCIONES_CPU_LINEA_INTEL
+        opciones_s = OPCIONES_CPU_GENERACION_INTEL
     elif marca == "AMD":
         if variable_componentes.get() == "CPU":
-            configurar_menu(variable_primer_parametro, boton_menu_primer_parametro,
-                        OPCIONES_CPU_LINEA_AMD)
-            configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro,
-                        OPCIONES_CPU_GENERACION_AMD)
+            configurar_menu(variable_primer_parametro, boton_menu_primer_parametro, OPCIONES_CPU_LINEA_AMD)
+            configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_CPU_GENERACION_AMD)
+            opciones_p = OPCIONES_CPU_LINEA_AMD
+            opciones_s = OPCIONES_CPU_GENERACION_AMD
         elif variable_componentes.get() == "GPU":
-            configurar_menu(variable_primer_parametro, boton_menu_primer_parametro,
-                        OPCIONES_GPU_LINEA_AMD)
-            configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro,
-                        OPCIONES_GPU_MODELO_AMD)
+            configurar_menu(variable_primer_parametro, boton_menu_primer_parametro, OPCIONES_GPU_LINEA_AMD)
+            configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_GPU_MODELO_AMD)
+            opciones_p = OPCIONES_GPU_LINEA_AMD
+            opciones_s = OPCIONES_GPU_MODELO_AMD
     elif marca == "Nvidia":
-        configurar_menu(variable_primer_parametro, boton_menu_primer_parametro,
-                    OPCIONES_GPU_LINEA_NVIDIA)
+        configurar_menu(variable_primer_parametro, boton_menu_primer_parametro, OPCIONES_GPU_LINEA_NVIDIA)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_VACIAS)
+        opciones_p = OPCIONES_GPU_LINEA_NVIDIA
+        opciones_s = ["..."]
     elif marca == "Todas las marcas" and variable_componentes.get() == "CPU":
         configurar_menu(variable_primer_parametro, boton_menu_primer_parametro, OPCIONES_VACIAS)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_VACIAS)
+        opciones_p = ["..."]
+        opciones_s = ["..."]
 
 
 variable_marca = StringVar(pestanna_busqueda)
@@ -201,7 +221,7 @@ boton_menu_marca.grid(row=1, column=2)
 
 
 def definir_serie(valor):
-
+    global opciones_s
     """
     Escogido el componente y la marca,
     esta funcion se encarga de definir
@@ -225,6 +245,7 @@ def definir_serie(valor):
             modelos_nvidia_gpu.append(f"{seleccion}90")
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro,
                         modelos_nvidia_gpu)
+        opciones_s = modelos_nvidia_gpu
 
 
 variable_primer_parametro = StringVar(pestanna_busqueda)
@@ -277,8 +298,27 @@ def buscar_componentes():
     Funcion para realizar la busqueda de
     componentes, aun en WIP
     """
+    num_marca = opciones_marca.index(variable_marca.get())
+    num_primer_parametro = opciones_p.index(variable_primer_parametro.get())
+    num_segundo_parametro = opciones_s.index(variable_segundo_parametro.get())
+    num_estado = OPCIONES_ESTADO.index(variable_estado.get())
+    num_garantia = OPCIONES_GARANTIA_MINIMA.index(variable_garantia_minima.get())
 
-    return None
+    var = [num_marca, num_primer_parametro, num_segundo_parametro, num_estado, num_garantia]
+    if variable_componentes.get() == OPCIONES_COMPONENTES[0]:
+        return None
+    elif variable_componentes.get() == OPCIONES_COMPONENTES[1]:
+        buscar_cpu(var)
+    elif variable_componentes.get() == OPCIONES_COMPONENTES[2]:
+        buscar_gpu(var)
+    elif variable_componentes.get() == OPCIONES_COMPONENTES[3]:
+        buscar_psu(var)
+    elif variable_componentes.get() == OPCIONES_COMPONENTES[4]:
+        buscar_ram(var)
+    elif variable_componentes.get() == OPCIONES_COMPONENTES[5]:
+        buscar_mother(var)
+    elif variable_componentes.get() == OPCIONES_COMPONENTES[6]:
+        buscar_unidad_almacenamiento(var)
 
 
 boton_buscar = Button(pestanna_busqueda, text="Buscar Componente", command=buscar_componentes)

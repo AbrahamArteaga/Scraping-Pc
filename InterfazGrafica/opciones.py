@@ -204,8 +204,8 @@ OPCIONES_GARANTIA_MINIMA = [
     "Todas las garantias minimas",
     "Todas las garantias minimas",
     "Garantia 6 Meses",
-    "Garantia 1 año",
-    "Garantia 2 años",
+    "Garantia 1 anno",
+    "Garantia 2 annos",
     "Garantia de por vida",
     "Sin garantia"
 ]
