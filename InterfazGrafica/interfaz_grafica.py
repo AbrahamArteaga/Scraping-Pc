@@ -298,27 +298,20 @@ def buscar_componentes():
     Funcion para realizar la busqueda de
     componentes, aun en WIP
     """
+
     num_marca = opciones_marca.index(variable_marca.get())
     num_primer_parametro = opciones_p.index(variable_primer_parametro.get())
     num_segundo_parametro = opciones_s.index(variable_segundo_parametro.get())
-    num_estado = OPCIONES_ESTADO.index(variable_estado.get())
-    num_garantia = OPCIONES_GARANTIA_MINIMA.index(variable_garantia_minima.get())
+    # num_estado = OPCIONES_ESTADO.index(variable_estado.get())
+    # num_garantia = OPCIONES_GARANTIA_MINIMA.index(variable_garantia_minima.get())
 
-    var = [num_marca, num_primer_parametro, num_segundo_parametro, num_estado, num_garantia]
+    var = [variable_componentes.get(), num_marca, num_primer_parametro, num_segundo_parametro, variable_estado.get(),
+           variable_garantia_minima.get()]
     if variable_componentes.get() == OPCIONES_COMPONENTES[0]:
         return None
-    elif variable_componentes.get() == OPCIONES_COMPONENTES[1]:
-        buscar_cpu(var)
-    elif variable_componentes.get() == OPCIONES_COMPONENTES[2]:
-        buscar_gpu(var)
-    elif variable_componentes.get() == OPCIONES_COMPONENTES[3]:
-        buscar_psu(var)
-    elif variable_componentes.get() == OPCIONES_COMPONENTES[4]:
-        buscar_ram(var)
-    elif variable_componentes.get() == OPCIONES_COMPONENTES[5]:
-        buscar_mother(var)
-    elif variable_componentes.get() == OPCIONES_COMPONENTES[6]:
-        buscar_unidad_almacenamiento(var)
+    else:
+        buscar(var)
+
 
 
 boton_buscar = Button(pestanna_busqueda, text="Buscar Componente", command=buscar_componentes)

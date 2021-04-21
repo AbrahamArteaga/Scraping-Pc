@@ -34,3 +34,4 @@ from InterfazGrafica.interfaz_grafica import *
 #
 #
 # buscar_componente()
+

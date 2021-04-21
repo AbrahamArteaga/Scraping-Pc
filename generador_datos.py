@@ -16,6 +16,7 @@ lista_marca_de_componente = [[OPCIONES_CPU_MARCA, "CPU"], [OPCIONES_GPU_MARCA, "
                              [OPCIONES_RAM_MARCA, "RAM"], [OPCIONES_MOTHER_BOARD_MARCA, "MOTHER"],
                              [OPCIONES_UNIDAD_ALMACENAMIENTO_MARCA, "ROM"]]
 
+
 #
 # ejemplo = [
 #     {
@@ -38,7 +39,6 @@ lista_marca_de_componente = [[OPCIONES_CPU_MARCA, "CPU"], [OPCIONES_GPU_MARCA, "
 
 
 def generar_datos(opciones_marca, nombre):
-
     datos = []
     opcion_uno = []
     opcion_dos = []
@@ -140,6 +140,7 @@ def actualizar_dia(nombre, precio_minimo, precio_maximo, salto_precio):
     ]
     datos_archivo = leer(nombre)
     for dato in datos_archivo:
+        dato["instancias"] = []
         for j in range(100):
             instacia = {
                 "tienda": choice(tiendas),
@@ -150,11 +151,10 @@ def actualizar_dia(nombre, precio_minimo, precio_maximo, salto_precio):
             }
             dato.get("instancias").append(instacia)
     escribir(nombre, datos_archivo)
-    print("ok")
 
+
+"falta agregar el dato con el menor precio al historial de precios en la funcion acutalizar dia"
 
 for tupla in lista_marca_de_componente:
     generar_datos(tupla[0], tupla[1])
     actualizar_dia(tupla[1], 400000, 3300000, 10000)
-
-
