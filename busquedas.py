@@ -44,38 +44,39 @@ def buscar_en_arbol(*parametros):
         for i in componentes_arbol.hijos[parametros[0]].hijos:
             for j in i.hijos:
                 for k in j.hijos:
-                    print(k.hijos[0].dato)
+                    # print(k.hijos[0].dato)
+                    buscar_intancias(k.hijos[0].dato.get("instancias"), parametros[4], parametros[5])
     elif parametros[2] == -1:
         for i in componentes_arbol.hijos[parametros[0]].hijos[parametros[1]].hijos:
             if parametros[3] == -1:
                 for j in i.hijos:
                     componente_escogido = j.hijos[0].dato
-                    print(componente_escogido)
-                    buscar_intancias_en_lista_enlazada(componente_escogido.get("instancias"), parametros[4],
-                                                       parametros[5])
+                    # print(componente_escogido)
+                    buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5])
             else:
                 componente_escogido = i.hijos[parametros[3]].hijos[0].dato
-                print(componente_escogido)
-                buscar_intancias_en_lista_enlazada(componente_escogido.get("instancias"), parametros[4], parametros[5])
+                # print(componente_escogido)
+                buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5])
     elif parametros[3] == -1:
         for i in componentes_arbol.hijos[parametros[0]].hijos[parametros[1]].hijos[parametros[2]].hijos:
             componente_escogido = i.hijos[0].dato
-            print(componente_escogido)
-            buscar_intancias_en_lista_enlazada(componente_escogido.get("instancias"), parametros[4], parametros[5])
+            # print(componente_escogido)
+            buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5])
     else:
         componente_escogido = componentes_arbol.hijos[parametros[0]].hijos[parametros[1]].hijos[parametros[2]].\
             hijos[parametros[3]].hijos[0].dato
-        print(componente_escogido)
-        buscar_intancias_en_lista_enlazada(componente_escogido.get("instancias"), parametros[4], parametros[5])
+        # print(componente_escogido)
+        buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5])
 
     fin = time()
-    print(f"T buscar = {fin - inicio}")
+    print(f"T buscar en arbol = {fin - inicio}")
 
 
-def buscar_intancias_en_lista_enlazada(lista, estado, garantia):
-    nodo_actual = lista.primero
-    while nodo_actual:
-        if (estado == "Todos los estados" or nodo_actual.data.get("estado") == estado)\
-                and (garantia == "Todas las garantias minimas" or nodo_actual.data.get("garantia") == garantia):
-            print(nodo_actual.data)
-        nodo_actual = nodo_actual.siguiente
+def buscar_intancias(d_instancias, estado, garantia):
+    datos_instancias = leer(f"{d_instancias}instancias")
+    for dato_instancia in datos_instancias:
+        if (estado == "Todos los estados" or dato_instancia.get("estado") == estado)\
+                 and (garantia == "Todas las garantias minimas" or dato_instancia.get("garantia") == garantia):
+            pass
+            # print(dato_instancia)
+

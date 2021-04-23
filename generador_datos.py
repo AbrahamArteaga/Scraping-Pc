@@ -3,7 +3,8 @@ from lector_datos import *
 from InterfazGrafica.opciones import *
 from datetime import *
 from random import *
-import os
+from os import *
+from lector_datos import direccion
 
 cwd = os.getcwd()  # Get the current working directory (cwd)
 files = os.listdir(cwd)  # Get all the files in that directory
@@ -80,8 +81,8 @@ def generar_datos(opciones_marca, nombre):
                     f"id {nombre}": f"{indice_marca}-{indice_opcion_uno}-{0}",
                     "marca": f"{opciones_marca[indice_marca]}",
                     f"{llave1}": f"{opcion_uno[indice_opcion_uno]}",
-                    "historial precio": [],
-                    "instancias": []
+                    "historial precio": f"{nombre}\\{indice_marca}\\{indice_opcion_uno}\\",
+                    "instancias": f"{nombre}\\{indice_marca}\\{indice_opcion_uno}\\"
                 }
                 datos.append(historial_precio(dic))
                 escribir(nombre, datos)
@@ -114,16 +115,17 @@ def generar_datos(opciones_marca, nombre):
                         "marca": f"{opciones_marca[indice_marca]}",
                         f"{llave1}": f"{opcion_uno[indice_opcion_uno]}",
                         f"{llave2}": f"{opcion_dos[indice_opcion_dos]}",
-                        "historial precio": [],
-                        "instancias": []
+                        "historial precio": f"{nombre}\\{indice_marca}\\{indice_opcion_uno}\\{indice_opcion_dos}",
+                        "instancias": f"{nombre}\\{indice_marca}\\{indice_opcion_uno}\\{indice_opcion_dos}\\"
                     }
                     datos.append(historial_precio(dic))
                     escribir(nombre, datos)
 
 
 def historial_precio(dic):
+    "todo toca actualizar el funcionamiento de esta funcion"
     datos = []
-    for i in range(365):  # 365
+    for i in range(0):  # 365
         dia = hoy - un_anno + timedelta(days=i)
         precio = randrange(400000, 3300000, 10000)
         dic.get("historial precio").append([dia.strftime("%d-%m-%y"), precio])
@@ -140,8 +142,8 @@ def actualizar_dia(nombre, precio_minimo, precio_maximo, salto_precio):
     ]
     datos_archivo = leer(nombre)
     for dato in datos_archivo:
-        dato["instancias"] = []
-        for j in range(100):
+        instacias = []
+        for j in range(50000):
             instacia = {
                 "tienda": choice(tiendas),
                 "estado": choice(OPCIONES_ESTADO[2:]),
@@ -149,12 +151,19 @@ def actualizar_dia(nombre, precio_minimo, precio_maximo, salto_precio):
                 "calificacion": randrange(0, 100, 1),
                 "dia/precio": [hoy.strftime("%d-%m-%y"), randrange(precio_minimo, precio_maximo, salto_precio)]
             }
-            dato.get("instancias").append(instacia)
-    escribir(nombre, datos_archivo)
+            instacias.append(instacia)
+        d = dato.get("instancias")
+        if path.exists(f"{direccion}{d}"):
+            escribir(f"{d}instancias", instacias)
+        else:
+            makedirs(f"{direccion}{d}")
+            escribir(f"{d}instancias", instacias)
 
 
 "falta agregar el dato con el menor precio al historial de precios en la funcion acutalizar dia"
 
 for tupla in lista_marca_de_componente:
+    # if tupla[1] == "MOTHER":
     generar_datos(tupla[0], tupla[1])
     actualizar_dia(tupla[1], 400000, 3300000, 10000)
+

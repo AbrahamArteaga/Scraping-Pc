@@ -18,6 +18,8 @@ from Estructuras.arboles import *
 from Estructuras.lista_enlazada_simple import *
 from lector_datos import *
 
+
+
 lista_componentes = ["CPU", "GPU", "PSU", "RAM", "MOTHER", "ROM"]
 componentes_arbol = Arbol("Componentes")
 for componente in lista_componentes:
@@ -26,8 +28,6 @@ for componente in lista_componentes:
     for dato in datos:
         historial_precio = converir_a_lista_enlazada(dato.pop("historial precio"))
         dato["historial precio"] = historial_precio
-        instancias = converir_a_lista_enlazada(dato.pop("instancias"))
-        dato["instancias"] = instancias
         idd = list(map(int, dato.get(f"id {componente}").split("-")))
         i_indice = comp.dato_en_hijos(idd[0])
         if i_indice >= 0:
@@ -39,10 +39,9 @@ for componente in lista_componentes:
         else:
             comp.annadir_hijo_ord(idd[0]).annadir_hijo_ord(idd[1]).annadir_hijo_ord(idd[2]).annadir_hijo(dato)
 
+
+
 print()
-
-
-
 
 
 

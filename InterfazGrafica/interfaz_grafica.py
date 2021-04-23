@@ -111,12 +111,16 @@ def establecer_componente(componente):
         configurar_menu(variable_primer_parametro, boton_menu_primer_parametro, OPCIONES_VACIAS)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_VACIAS)
         opciones_marca = OPCIONES_CPU_MARCA
+        opciones_p = ["..."]
+        opciones_s = ["..."]
 
     elif componente == "GPU":
         configurar_menu(variable_marca, boton_menu_marca, OPCIONES_GPU_MARCA)
         configurar_menu(variable_primer_parametro, boton_menu_primer_parametro, OPCIONES_VACIAS)
         configurar_menu(variable_segundo_parametro, boton_menu_segundo_parametro, OPCIONES_VACIAS)
         opciones_marca = OPCIONES_GPU_MARCA
+        opciones_p = ["..."]
+        opciones_s = ["..."]
 
     elif componente == "PSU":
         configurar_menu(variable_marca, boton_menu_marca, OPCIONES_PSU_MARCA)
@@ -302,13 +306,13 @@ def buscar_componentes():
     num_marca = opciones_marca.index(variable_marca.get())
     num_primer_parametro = opciones_p.index(variable_primer_parametro.get())
     num_segundo_parametro = opciones_s.index(variable_segundo_parametro.get())
-    # num_estado = OPCIONES_ESTADO.index(variable_estado.get())
-    # num_garantia = OPCIONES_GARANTIA_MINIMA.index(variable_garantia_minima.get())
+    num_estado = OPCIONES_ESTADO.index(variable_estado.get())
+    num_garantia = OPCIONES_GARANTIA_MINIMA.index(variable_garantia_minima.get())
 
     var = [variable_componentes.get(), num_marca, num_primer_parametro, num_segundo_parametro, variable_estado.get(),
            variable_garantia_minima.get()]
-    var_arboles = [num_componente-1, num_marca-1, num_primer_parametro-1, num_segundo_parametro-1, variable_estado.get(),
-                   variable_garantia_minima.get()]
+    var_arboles = [num_componente-1, num_marca-1, num_primer_parametro-1, num_segundo_parametro-1,
+                   variable_estado.get(), variable_garantia_minima.get()]
     if variable_componentes.get() == OPCIONES_COMPONENTES[0]:
         return None
     else:
