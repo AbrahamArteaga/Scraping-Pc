@@ -54,14 +54,22 @@ class Cola:
         inicial de la fila
         """
 
-        self.fila.pop(0)
-        self.inicial = self.fila[0]
+        elemento_desenfilado = self.fila.pop(0)
+        if self.longitud() > 0:
+            self.inicial = self.fila[0]
+        else:
+            self.inicial = None
+        return elemento_desenfilado
 
     def esta_vacia(self):
-        pass
+        if self.longitud() == 0:
+            return True
+        return False
 
     def vaciar(self):
-        pass
+        self.inicial = None
+        self.final = None
+        self.fila = []
 
     def imprimir(self):
         pass
@@ -69,5 +77,5 @@ class Cola:
     def __str__(self):
         return str(self.fila)
 
-    def __len__(self):
+    def longitud(self):
         return len(self.fila)

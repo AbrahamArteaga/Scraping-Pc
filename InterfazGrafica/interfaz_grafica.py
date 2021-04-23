@@ -298,7 +298,7 @@ def buscar_componentes():
     Funcion para realizar la busqueda de
     componentes, aun en WIP
     """
-
+    num_componente = OPCIONES_COMPONENTES.index(variable_componentes.get())
     num_marca = opciones_marca.index(variable_marca.get())
     num_primer_parametro = opciones_p.index(variable_primer_parametro.get())
     num_segundo_parametro = opciones_s.index(variable_segundo_parametro.get())
@@ -307,10 +307,13 @@ def buscar_componentes():
 
     var = [variable_componentes.get(), num_marca, num_primer_parametro, num_segundo_parametro, variable_estado.get(),
            variable_garantia_minima.get()]
+    var_arboles = [num_componente-1, num_marca-1, num_primer_parametro-1, num_segundo_parametro-1, variable_estado.get(),
+                   variable_garantia_minima.get()]
     if variable_componentes.get() == OPCIONES_COMPONENTES[0]:
         return None
     else:
-        buscar(var)
+        # buscar(var)
+        buscar_en_arbol(var_arboles)
 
 
 

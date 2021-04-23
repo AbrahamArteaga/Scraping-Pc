@@ -19,6 +19,13 @@ class Nodo:
         self.siguiente = None
 
 
+def converir_a_lista_enlazada(lista):
+    lis = ListaEnlazadaSimple()
+    for dato in lista:
+        lis.insertar_final(dato)
+    return lis
+
+
 class ListaEnlazadaSimple:
 
     """
