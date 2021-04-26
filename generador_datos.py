@@ -81,11 +81,11 @@ def generar_datos(opciones_marca, nombre):
                     f"id {nombre}": f"{indice_marca}-{indice_opcion_uno}-{0}",
                     "marca": f"{opciones_marca[indice_marca]}",
                     f"{llave1}": f"{opcion_uno[indice_opcion_uno]}",
-                    "historial precio": f"{nombre}\\{indice_marca}\\{indice_opcion_uno}\\",
                     "instancias": f"{nombre}\\{indice_marca}\\{indice_opcion_uno}\\"
                 }
-                datos.append(historial_precio(dic))
-                escribir(nombre, datos)
+                datos.append(dic)
+            escribir(nombre, datos)
+            print(2)
         elif nombre == "ROM":
             llave1 = "capacidad"
             llave2 = "tipo"
@@ -115,21 +115,27 @@ def generar_datos(opciones_marca, nombre):
                         "marca": f"{opciones_marca[indice_marca]}",
                         f"{llave1}": f"{opcion_uno[indice_opcion_uno]}",
                         f"{llave2}": f"{opcion_dos[indice_opcion_dos]}",
-                        "historial precio": f"{nombre}\\{indice_marca}\\{indice_opcion_uno}\\{indice_opcion_dos}",
                         "instancias": f"{nombre}\\{indice_marca}\\{indice_opcion_uno}\\{indice_opcion_dos}\\"
                     }
-                    datos.append(historial_precio(dic))
-                    escribir(nombre, datos)
+                    datos.append(dic)
+                escribir(nombre, datos)
 
 
-def historial_precio(dic):
-    "todo toca actualizar el funcionamiento de esta funcion"
-    datos = []
-    for i in range(0):  # 365
-        dia = hoy - un_anno + timedelta(days=i)
-        precio = randrange(400000, 3300000, 10000)
-        dic.get("historial precio").append([dia.strftime("%d-%m-%y"), precio])
-    return dic
+def historial_precio(nombre, precio_minimo, precio_maximo, salto_precio):
+    datos_archivo = leer(nombre)
+    print(1)
+    for dato in datos_archivo:
+        historial = []
+        for i in range(365):
+            dia = hoy - un_anno + timedelta(days=i)
+            precio = randrange(precio_minimo, precio_maximo, salto_precio)
+            historial.append([dia.strftime("%d-%m-%y"), precio])
+        d = dato.get("instancias")
+        if path.exists(f"{direccion}{d}"):
+            escribir(f"{d}historial_precio", historial)
+        else:
+            makedirs(f"{direccion}{d}")
+            escribir(f"{d}historial_precio", historial)
 
 
 def actualizar_dia(nombre, precio_minimo, precio_maximo, salto_precio):
@@ -166,4 +172,5 @@ for tupla in lista_marca_de_componente:
     # if tupla[1] == "MOTHER":
     generar_datos(tupla[0], tupla[1])
     actualizar_dia(tupla[1], 400000, 3300000, 10000)
+    historial_precio(tupla[1], 400000, 3300000, 10000)
 
