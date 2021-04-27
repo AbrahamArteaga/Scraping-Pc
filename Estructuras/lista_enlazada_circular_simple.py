@@ -57,26 +57,95 @@ class ListaEnlazadaCircularSimple:
             nodo_actual = nodo_actual.siguiente
         return nodo_actual.data
 
-    def insertar_elemento_posicion_k(self, k, data):
-        dato = Nodo(data)
+    def eliminar_final(self):
+        if self.longitud > 0:
+            k = self.longitud
+            contador = 0
+            nodo_actual = self.primero
+            while contador < k - 1:
+                contador += 1
+                nodo_actual = nodo_actual.siguiente
+            data = nodo_actual.siguiente.data
+            nodo_actual.siguiente = None
+            self.longitud -= 1
+            return data
+        elif self.longitud == 0:
+            dato = self.primero
+            self.primero = None
+            self.ultimo = None
+            self.longitud = 0
+            return dato
+        return "no se pueden eliminar elementos en una lista vacia"
+
+    def actualizar_dato(self, k, data):
         contador = 0
         nodo_actual = self.primero
-        while contador != k - 1:
+        while contador < k - 1:
             contador += 1
-            nodo_actual = nodo_actual.siguiente
-        dato.siguiente = nodo_actual.siguiente
-        nodo_actual.siguiente = dato
+            if nodo_actual.siguiente:
+                nodo_actual = nodo_actual.siguiente
+            else:
+                return "la posicion esta fuera de rango"
+        nodo_actual.data = data
+        return 0
+
+    def insertar_elemento_posicion_k(self, k, data):
+        nod = Nodo(data)
+        if not self.primero:
+            if k == 0:
+                self.primero = nod
+                self.ultimo = nod
+                self.ultimo.siguiente = self.primero
+                self.longitud += 1
+                return 0
+            else:
+                return "la posicion esta fuera de rango"
+        if k == 0:
+            nod.siguiente = self.primero
+            self.primero = nod
+            self.ultimo.siguiente = self.primero
+            return 0
+        contador = 0
+        nodo_actual = self.primero
+        while contador < k - 1:
+            contador += 1
+            if nodo_actual.siguiente:
+                nodo_actual = nodo_actual.siguiente
+            else:
+                return "la posicion esta fuera de rango"
+        nod.siguiente = nodo_actual.siguiente
+        nodo_actual.siguiente = nod
+        self.longitud += 1
         return 0
 
     def eliminar_elemento_posicion_k(self, k):
-        contador = 0
-        nodo_actual = self.primero
-        while contador != k - 1:
-            contador += 1
-            nodo_actual = nodo_actual.siguiente
-        data = nodo_actual.siguiente.data
-        nodo_actual.siguiente = nodo_actual.siguiente.siguiente
-        return data
+        if self.longitud > 0:
+            if k == 0 and self.primero.siguiente:
+                data = self.primero.data
+                self.primero = self.primero.siguiente
+                return data
+            contador = 0
+            nodo_actual = self.primero
+            while contador < k - 1:
+                contador += 1
+                if k <= self.longitud and nodo_actual.siguiente:
+                    nodo_actual = nodo_actual.siguiente
+                else:
+                    return "la posicion esta fuera de rango"
+            data = nodo_actual.siguiente.data
+            nodo_actual.siguiente = nodo_actual.siguiente.siguiente
+            self.longitud -= 1
+            return data
+        elif self.longitud == 0:
+            if k != self.longitud:
+                return "la posicion esta fuera de rango"
+            else:
+                dato = self.primero
+                self.primero = None
+                self.ultimo = None
+                self.longitud = 0
+                return dato
+        return "no se pueden eliminar elementos en una lista vacia"
 
     def guardar_lista(self):
 

@@ -85,7 +85,6 @@ def generar_datos(opciones_marca, nombre):
                 }
                 datos.append(dic)
             escribir(nombre, datos)
-            print(2)
         elif nombre == "ROM":
             llave1 = "capacidad"
             llave2 = "tipo"
@@ -123,7 +122,6 @@ def generar_datos(opciones_marca, nombre):
 
 def historial_precio(nombre, precio_minimo, precio_maximo, salto_precio):
     datos_archivo = leer(nombre)
-    print(1)
     for dato in datos_archivo:
         historial = []
         for i in range(365):
@@ -149,7 +147,7 @@ def actualizar_dia(nombre, precio_minimo, precio_maximo, salto_precio):
     datos_archivo = leer(nombre)
     for dato in datos_archivo:
         instacias = []
-        for j in range(50000):
+        for j in range(100):
             instacia = {
                 "tienda": choice(tiendas),
                 "estado": choice(OPCIONES_ESTADO[2:]),

@@ -75,6 +75,5 @@ def buscar_intancias(d_instancias, estado, garantia):
     for dato_instancia in datos_instancias:
         if (estado == "Todos los estados" or dato_instancia.get("estado") == estado)\
                  and (garantia == "Todas las garantias minimas" or dato_instancia.get("garantia") == garantia):
-            pass
-            # print(dato_instancia)
+            print(dato_instancia)
 

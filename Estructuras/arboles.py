@@ -1,4 +1,4 @@
-from Estructuras.cola import *
+from Estructuras.cola_arreglo import *
 
 
 class Arbol:
