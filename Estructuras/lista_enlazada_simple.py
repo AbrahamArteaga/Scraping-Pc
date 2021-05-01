@@ -140,7 +140,7 @@ class ListaEnlazadaSimple:
                     nodo_actual = nodo_actual.siguiente
                 else:
                     return "la posicion esta fuera de rango"
-            if nodo_actual.siguiente.siguiente:
+            if nodo_actual.siguiente and nodo_actual.siguiente.siguiente:
                 data = nodo_actual.siguiente.data
                 nodo_actual.siguiente = nodo_actual.siguiente.siguiente
                 self.longitud -= 1

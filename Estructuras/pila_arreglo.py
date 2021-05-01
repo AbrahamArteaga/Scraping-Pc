@@ -25,8 +25,8 @@ class Pila:
         la cabeza de la pila,
         mas no la elimina.
         """
-
-        return self.cabeza
+        if self.cabeza != None:
+            return self.cabeza
 
     def enpilar(self, elemento):
 
@@ -50,7 +50,10 @@ class Pila:
             pass
         else:
             self.stack.pop()
-            self.cabeza = self.stack[-1]
+            if len(self.stack) > 0:
+                self.cabeza = self.stack[-1]
+            else:
+                self.cabeza = None
 
     def esta_vacia(self):
         pass
@@ -66,3 +69,4 @@ class Pila:
 
     def __len__(self):
         return len(self.stack)
+
