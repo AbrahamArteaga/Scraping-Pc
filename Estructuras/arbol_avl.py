@@ -17,17 +17,16 @@ class ArbolAVL:
     def obtener_diferencia(self, nodo):
         if not nodo:
             return 0
+        if not nodo.izquierda and not nodo.derecha:
+            return 0
+        if not nodo.izquierda:
+            return 0 - (self.obtener_altura(nodo.derecha) + 1)
+        if not nodo.derecha:
+            return self.obtener_altura(nodo.izquierda) + 1
         return self.obtener_altura(nodo.izquierda) - self.obtener_altura(nodo.derecha)
 
     def calcular_altura(self, nodo):
-        if not nodo.derecha and nodo.izquierda:
-            return 0
-        elif not nodo.derecha:
-            return nodo.izquierda.altura + 1
-        elif not nodo.izquierda:
-            return nodo.derecha.altura + 1
-        else:
-            return max(nodo.derecha.altura, nodo.izquierda.altura) + 1
+        return max(self.obtener_altura(nodo.derecha), self.obtener_altura(nodo.izquierda)) + 1
 
     def insertar(self, data, raiz):
         if not raiz:
@@ -38,36 +37,51 @@ class ArbolAVL:
             raiz.derecha = self.insertar(data, raiz.derecha)
 
         raiz.altura = self.calcular_altura(raiz)
+        diferencia = self.obtener_diferencia(raiz)
 
-        if self.obtener_diferencia(raiz) < -1:
-            if self.obtener_diferencia(raiz.derecha) <= 0:
+        if diferencia < -1:
+            if self.obtener_diferencia(raiz.derecha) < 0:
                 return self.rotacion_dd(raiz)
             else:
                 return self.rotacion_di(raiz)
-        elif self.obtener_diferencia(raiz) > 1:
-            if self.obtener_diferencia(raiz.izquierda) >= 0:
+        elif diferencia > 1:
+            if self.obtener_diferencia(raiz.izquierda) > 0:
                 return self.rotacion_ii(raiz)
             else:
                 return self.rotacion_id(raiz)
         return raiz
 
-    def eliminar(self, data):
-        pass
+    def eliminar(self, data, raiz):
+        if not raiz:
+            return raiz
+        elif data < raiz.data:
+            raiz.izquierda = self.eliminar(data, raiz.izquierda)
+        elif data > raiz.data:
+            raiz.derecha = self.eliminar(data, raiz.derecha)
+        else:
+            pass
+
 
     def rotacion_dd(self, nodo):
         tem = nodo.derecha
         nodo.derecha = tem.izquierda
         tem.izquierda = nodo
-        nodo.altura = 1 + max(self.obtener_altura(nodo.izquierda), self.obtener_altura(nodo.derecha))
-        tem.altura = 1 + max(self.obtener_altura(nodo), self.obtener_altura(tem.derecha))
+        if not nodo.derecha and not nodo.izquierda:
+            nodo.altura = 0
+        else:
+            nodo.altura = 1 + max(self.obtener_altura(nodo.izquierda), self.obtener_altura(nodo.derecha))
+        tem.altura = 1 + max(self.obtener_altura(tem.derecha), self.obtener_altura(tem.derecha))
         return tem
 
     def rotacion_ii(self, nodo):
         tem = nodo.izquierda
         nodo.izquierda = tem.derecha
         tem.derecha = nodo
-        nodo.altura = 1 + max(self.obtener_altura(nodo.izquierda), self.obtener_altura(nodo.derecha))
-        tem.altura = 1 + max(self.obtener_altura(nodo), self.obtener_altura(tem.izquierda))
+        if not nodo.derecha and not nodo.izquierda:
+            nodo.altura = 0
+        else:
+            nodo.altura = 1 + max(self.obtener_altura(nodo.izquierda), self.obtener_altura(nodo.derecha))
+        tem.altura = 1 + max(self.obtener_altura(tem.derecha), self.obtener_altura(tem.izquierda))
         return tem
 
     def rotacion_id(self, nodo):
