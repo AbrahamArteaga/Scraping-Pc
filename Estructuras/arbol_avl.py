@@ -25,6 +25,11 @@ class ArbolAVL:
             return self.obtener_altura(nodo.izquierda) + 1
         return self.obtener_altura(nodo.izquierda) - self.obtener_altura(nodo.derecha)
 
+    def obtener_dato_menor(self, nodo):
+        if not nodo or not nodo.izquierda:
+            return nodo
+        return self.obtener_dato_menor(nodo.izquierda)
+
     def calcular_altura(self, nodo):
         return max(self.obtener_altura(nodo.derecha), self.obtener_altura(nodo.izquierda)) + 1
 
@@ -59,8 +64,38 @@ class ArbolAVL:
         elif data > raiz.data:
             raiz.derecha = self.eliminar(data, raiz.derecha)
         else:
-            pass
+            if not raiz.derecha:
+                tem = raiz.izquierda
+                raiz = None
+                return tem
+            elif not raiz.izquierda:
+                tem = raiz.derecha
+                raiz = None
+                return tem
+            else:
+                tem = self.obtener_dato_menor(raiz.derecha) # el menor dato de la derecha
+                raiz.data = tem.data
+                raiz.derecha = self.eliminar(tem.data, raiz.derecha)
+        if not raiz:
+            return raiz
+        elif not raiz.derecha and not raiz.izquierda:
+            raiz.altura = 0
+        else:
+            raiz.altura = 1 + max(self.obtener_altura(raiz.izquierda), self.obtener_altura(raiz.derecha))
 
+        diferencia = self.obtener_diferencia(raiz)
+
+        if diferencia < -1:
+            if self.obtener_diferencia(raiz.derecha) < 0:
+                return self.rotacion_dd(raiz)
+            else:
+                return self.rotacion_di(raiz)
+        elif diferencia > 1:
+            if self.obtener_diferencia(raiz.izquierda) > 0:
+                return self.rotacion_ii(raiz)
+            else:
+                return self.rotacion_id(raiz)
+        return raiz
 
     def rotacion_dd(self, nodo):
         tem = nodo.derecha
@@ -93,10 +128,3 @@ class ArbolAVL:
         return self.rotacion_dd(nodo)
 
 
-arbol = ArbolAVL()
-
-raiz = None
-for i in range(10):
-    raiz = arbol.insertar(i, raiz)
-
-print()
