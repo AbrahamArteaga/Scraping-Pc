@@ -1,6 +1,6 @@
 "Implementación de arbol"
 
-from cola_arreglo import *
+from Estructuras.cola_arreglo import *
 
 
 class Arbol:
