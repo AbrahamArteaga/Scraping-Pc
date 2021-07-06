@@ -210,6 +210,12 @@ OPCIONES_GARANTIA_MINIMA = [
     "Sin garantia"
 ]
 
+OPCIONES_ORDEN_BUSQUEDA = [
+    "Sin orden",
+    "Precio",
+    "Alfabéticamente tienda"
+]
+
 OPCIONES_VACIAS = [
     "..."
 ]

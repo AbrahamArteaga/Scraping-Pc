@@ -5,11 +5,9 @@ Autor Original: Manuel
 
 Ultima Revision: 6/04/2021
 
-Modulos que se importan: interfaz.py
+Modulos que se importan:
 
 """
-
-# from interfaz import *
 
 
 from time import time

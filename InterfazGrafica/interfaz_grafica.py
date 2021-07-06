@@ -293,6 +293,16 @@ boton_menu_garantia_minima.config(width=25)
 boton_menu_garantia_minima.grid(row=2, column=2)
 
 
+# Menu de opciones orden de busqueda
+
+
+variable_orden_busqueda = StringVar(pestanna_busqueda)
+variable_orden_busqueda.set(OPCIONES_ORDEN_BUSQUEDA[0])
+boton_menu_orden_busqueda = OptionMenu(pestanna_busqueda, variable_orden_busqueda,
+                                        *OPCIONES_ORDEN_BUSQUEDA)
+boton_menu_orden_busqueda.config(width=25)
+boton_menu_orden_busqueda.grid(row=2, column=3)
+
 # Boton Buscar
 
 
@@ -312,9 +322,9 @@ def buscar_componentes():
     var = [variable_componentes.get(), num_marca, num_primer_parametro, num_segundo_parametro, variable_estado.get(),
            variable_garantia_minima.get()]
     var_arboles = [num_componente-1, num_marca-1, num_primer_parametro-1, num_segundo_parametro-1,
-                   variable_estado.get(), variable_garantia_minima.get()]
+                   variable_estado.get(), variable_garantia_minima.get(), variable_orden_busqueda.get()]
     if variable_componentes.get() == OPCIONES_COMPONENTES[0]:
-        return None
+        return
     else:
         # buscar(var)
         buscar_en_arbol(var_arboles)

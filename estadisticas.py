@@ -1,13 +1,6 @@
-# from Estructuras.lista_enlazada_simple import *
-# from Estructuras.lista_enlazada_doble import *
-# from Estructuras.lista_enlazada_circular_simple import *
-# from Estructuras.lista_enlazada_circular_doble import *
-from Estructuras.cola_arreglo import *
-# from Estructuras.cola_lista_enlazada import *
-from Estructuras.pila_arreglo import *
-# from Estructuras.pila_lista_enlazada import *
-# from time import time
-# from random import randrange
+from Estructuras.arbol_avl import *
+from time import time
+from random import randrange
 #
 # n = 100000000
 #
@@ -312,5 +305,55 @@ from Estructuras.pila_arreglo import *
 # print(s, q)
 
 
-from queue import *
+"""arbol avl"""
 
+n = 100000000
+
+"""arreglos"""
+
+
+def estadisticas_avl(n):
+    print("avl")
+    # crear
+
+    arbol = ArbolAVL()
+    # raiz = None
+    # tiempo = 0
+    # for i in range(n):
+    #     inicio = time()
+    #     raiz = arbol.insertar(i, raiz)
+    #     fin = time()
+    #     tiempo += fin - inicio
+    # crear = "crear", n, tiempo
+    # print(tiempo)
+    # # print(crear)
+
+    # insertar
+
+    raiz = None
+    tiempo = 0
+    for i in range(n):
+        indice = randrange(i + 1)
+        inicio = time()
+        raiz = arbol.insertar(indice, raiz)
+        fin = time()
+        tiempo += fin - inicio
+    insertar = "insertar", n, tiempo
+    # print(insertar)
+    print(tiempo)
+
+    # eliminar
+
+    tiempo = 0
+    for i in range(n):
+        indice = randrange(n - i)
+        inicio = time()
+        raiz = arbol.eliminar(indice, raiz)
+        fin = time()
+        tiempo += fin - inicio
+    eliminar = "eliminar", n, tiempo
+    # print(eliminar)
+    print(tiempo)
+
+
+estadisticas_avl(n)
