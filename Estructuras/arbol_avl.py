@@ -1,11 +1,10 @@
 class Nodo:
-    def __init__(self, data, otros_datos):
+    def __init__(self, data):
         self.data = data
         self.izquierda = None
         self.derecha = None
         self.altura = 0
         self.contador = 0
-        self.otros_datos = otros_datos
 
 
 class ArbolAVL:
@@ -34,13 +33,13 @@ class ArbolAVL:
     def calcular_altura(self, nodo):
         return max(self.obtener_altura(nodo.derecha), self.obtener_altura(nodo.izquierda)) + 1
 
-    def insertar(self, data, raiz, otros_datos):
+    def insertar(self, data, raiz):
         if not raiz:
-            return Nodo(data, otros_datos)
+            return Nodo(data)
         elif data < raiz.data:
-            raiz.izquierda = self.insertar(data, raiz.izquierda, otros_datos)
+            raiz.izquierda = self.insertar(data, raiz.izquierda)
         else:
-            raiz.derecha = self.insertar(data, raiz.derecha, otros_datos)
+            raiz.derecha = self.insertar(data, raiz.derecha)
 
         raiz.altura = self.calcular_altura(raiz)
         diferencia = self.obtener_diferencia(raiz)
@@ -127,19 +126,5 @@ class ArbolAVL:
     def rotacion_di(self, nodo):
         nodo.derecha = self.rotacion_ii(nodo.derecha)
         return self.rotacion_dd(nodo)
-
-    def imprimir_inorder(self, raiz):
-        if raiz:
-            self.imprimir_inorder(raiz.izquierda)
-            print(raiz.otros_datos)
-            self.imprimir_inorder(raiz.derecha)
-
-# raiz = None
-# arbool = ArbolAVL()
-# for i in range(30):
-#     raiz = arbool.insertar(i, raiz, None)
-#
-# arbool.imprimir_inorder(raiz)
-
 
 
