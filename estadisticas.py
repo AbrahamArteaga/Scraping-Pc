@@ -1,4 +1,5 @@
 from Estructuras.arbol_avl import *
+from Estructuras.disjoint_sets import *
 from time import time
 from random import randrange
 #
@@ -305,55 +306,95 @@ from random import randrange
 # print(s, q)
 
 
-"""arbol avl"""
+# """arbol avl"""
+#
+# n = 100000000
+#
+#
+#
+# def estadisticas_avl(n):
+#     print("avl")
+#     # crear
+#
+#     arbol = ArbolAVL()
+#     # raiz = None
+#     # tiempo = 0
+#     # for i in range(n):
+#     #     inicio = time()
+#     #     raiz = arbol.insertar(i, raiz)
+#     #     fin = time()
+#     #     tiempo += fin - inicio
+#     # crear = "crear", n, tiempo
+#     # print(tiempo)
+#     # # print(crear)
+#
+#     # insertar
+#
+#     raiz = None
+#     tiempo = 0
+#     for i in range(n):
+#         indice = randrange(i + 1)
+#         inicio = time()
+#         raiz = arbol.insertar(indice, raiz)
+#         fin = time()
+#         tiempo += fin - inicio
+#     insertar = "insertar", n, tiempo
+#     # print(insertar)
+#     print(tiempo)
+#
+#     # eliminar
+#
+#     tiempo = 0
+#     for i in range(n):
+#         indice = randrange(n - i)
+#         inicio = time()
+#         raiz = arbol.eliminar(indice, raiz)
+#         fin = time()
+#         tiempo += fin - inicio
+#     eliminar = "eliminar", n, tiempo
+#     # print(eliminar)
+#     print(tiempo)
+#
+#
+# estadisticas_avl(n)
+
+"""sets"""
 
 n = 100000000
+def estadisticas_sets():
+#     make set
 
-"""arreglos"""
-
-
-def estadisticas_avl(n):
-    print("avl")
-    # crear
-
-    arbol = ArbolAVL()
-    # raiz = None
-    # tiempo = 0
-    # for i in range(n):
-    #     inicio = time()
-    #     raiz = arbol.insertar(i, raiz)
-    #     fin = time()
-    #     tiempo += fin - inicio
-    # crear = "crear", n, tiempo
-    # print(tiempo)
-    # # print(crear)
-
-    # insertar
-
-    raiz = None
+    set = DisjoinSet()
     tiempo = 0
     for i in range(n):
         indice = randrange(i + 1)
         inicio = time()
-        raiz = arbol.insertar(indice, raiz)
+        set.make_set(indice)
         fin = time()
         tiempo += fin - inicio
-    insertar = "insertar", n, tiempo
-    # print(insertar)
     print(tiempo)
 
-    # eliminar
 
     tiempo = 0
     for i in range(n):
         indice = randrange(n - i)
+        indice2 = randrange(n - i)
         inicio = time()
-        raiz = arbol.eliminar(indice, raiz)
+        set.union(indice, indice2)
         fin = time()
         tiempo += fin - inicio
-    eliminar = "eliminar", n, tiempo
-    # print(eliminar)
     print(tiempo)
 
 
-estadisticas_avl(n)
+    tiempo = 0
+    for i in range(n):
+        inicio = time()
+        set.find(i)
+        fin = time()
+        tiempo += fin - inicio
+    print(tiempo)
+
+
+estadisticas_sets()
+
+

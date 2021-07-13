@@ -28,6 +28,8 @@ class DisjoinSet:
         dentro de un conjunto.
         Argumentos: i
         """
+        if i >= len(self.parent):
+            return -1
         if i != self.parent[i]:
             self.parent[i] = self.find(self.parent[i])
         return self.parent[i]
@@ -49,12 +51,4 @@ class DisjoinSet:
                 self.rank[j_id] += 1
 
 
-conjunto = DisjoinSet()
-conjunto.make_set(1)
-conjunto.make_set(2)
-conjunto.make_set(6)
-conjunto.union(2, 4)
-conjunto.union(5, 2)
-conjunto.union(3, 1)
-conjunto.union(2, 3)
-print()
+
