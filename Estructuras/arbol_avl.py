@@ -134,6 +134,12 @@ class ArbolAVL:
             print(raiz.otros_datos)
             self.imprimir_inorder(raiz.derecha)
 
+    def guardar_inorder(self, raiz, datos):
+        if raiz:
+            self.guardar_inorder(raiz.izquierda, datos)
+            datos.append(raiz.otros_datos)
+            self.guardar_inorder(raiz.derecha, datos)
+            return datos
 
 # "Implementación de un Arbol AVL"
 #

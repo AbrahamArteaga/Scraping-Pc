@@ -2,6 +2,7 @@ from Estructuras.arbol_avl import *
 from Estructuras.disjoint_sets import *
 from time import time
 from random import randrange
+
 #
 # n = 100000000
 #
@@ -358,43 +359,88 @@ from random import randrange
 #
 # estadisticas_avl(n)
 
-"""sets"""
+# """sets"""
+#
+# n = 100000000
+# def estadisticas_sets():
+# #     make set
+#
+#     set = DisjoinSet()
+#     tiempo = 0
+#     for i in range(n):
+#         indice = randrange(i + 1)
+#         inicio = time()
+#         set.make_set(indice)
+#         fin = time()
+#         tiempo += fin - inicio
+#     print(tiempo)
+#
+#
+#     tiempo = 0
+#     for i in range(n):
+#         indice = randrange(n - i)
+#         indice2 = randrange(n - i)
+#         inicio = time()
+#         set.union(indice, indice2)
+#         fin = time()
+#         tiempo += fin - inicio
+#     print(tiempo)
+#
+#
+#     tiempo = 0
+#     for i in range(n):
+#         inicio = time()
+#         set.find(i)
+#         fin = time()
+#         tiempo += fin - inicio
+#     print(tiempo)
 
-n = 100000000
-def estadisticas_sets():
-#     make set
 
-    set = DisjoinSet()
+# estadisticas_sets()
+
+
+"""tablas hash"""
+n = [10000, 30000, 50000, 70000, 90000, 100000, 300000, 500000, 700000, 900000, 1000000, 10000000, 100000000]
+
+
+
+def estadisticas_hash(n):
+    # insertar
+
+    tabla = {}
     tiempo = 0
     for i in range(n):
-        indice = randrange(i + 1)
+        llave = randrange(i + 1)
+        valor = i
         inicio = time()
-        set.make_set(indice)
+        tabla[str(llave)] = valor
         fin = time()
         tiempo += fin - inicio
     print(tiempo)
 
-
     tiempo = 0
     for i in range(n):
-        indice = randrange(n - i)
-        indice2 = randrange(n - i)
+        llave = randrange(i + 1)
         inicio = time()
-        set.union(indice, indice2)
+        tabla.get(str(llave))
         fin = time()
         tiempo += fin - inicio
     print(tiempo)
 
-
     tiempo = 0
     for i in range(n):
+        llave = randrange(i + 1)
         inicio = time()
-        set.find(i)
+        try:
+            tabla.pop(str(llave))
+        except:
+            pass
         fin = time()
         tiempo += fin - inicio
     print(tiempo)
 
-
-estadisticas_sets()
-
+for ns in n:
+    print(ns)
+    estadisticas_hash(ns)
+    print()
 

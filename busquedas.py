@@ -36,55 +36,64 @@ def buscar(*parametros):
 
 
 def buscar_en_arbol(*parametros):
+    arbol = ArbolAVL()
+    raiz = None
     parametros = parametros[0]
     inicio = time()
-    print(parametros)
+    # print(parametros)
+    datos = []
     if parametros[1] == -1:
         for i in componentes_arbol.hijos[parametros[0]].hijos:
             for j in i.hijos:
                 for k in j.hijos:
                     # print(k.hijos[0].dato)
-                    buscar_intancias(k.hijos[0].dato.get("instancias"), parametros[4], parametros[5], k.hijos[0].dato)
+                    raiz = buscar_intancias(k.hijos[0].dato.get("instancias"), parametros[4], parametros[5],
+                                            k.hijos[0].dato, parametros[6], raiz)
     elif parametros[2] == -1:
         for i in componentes_arbol.hijos[parametros[0]].hijos[parametros[1]].hijos:
             if parametros[3] == -1:
                 for j in i.hijos:
                     componente_escogido = j.hijos[0].dato
                     # print(componente_escogido)
-                    buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5],
-                                     componente_escogido, parametros[6])
+                    raiz = buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5],
+                                     componente_escogido, parametros[6], raiz)
             else:
                 componente_escogido = i.hijos[parametros[3]].hijos[0].dato
                 # print(componente_escogido)
-                buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5],
-                                 componente_escogido, parametros[6])
+                raiz = buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5],
+                                 componente_escogido, parametros[6], raiz)
     elif parametros[3] == -1:
         for i in componentes_arbol.hijos[parametros[0]].hijos[parametros[1]].hijos[parametros[2]].hijos:
             componente_escogido = i.hijos[0].dato
             # print(componente_escogido)
-            buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5], componente_escogido,
-                             parametros[6])
+            raiz = buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5],
+                                    componente_escogido, parametros[6], raiz)
     else:
         componente_escogido = componentes_arbol.hijos[parametros[0]].hijos[parametros[1]].hijos[parametros[2]].\
             hijos[parametros[3]].hijos[0].dato
         # print(componente_escogido)
-        buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5], componente_escogido,
-                         parametros[6])
+        raiz = buscar_intancias(componente_escogido.get("instancias"), parametros[4], parametros[5],
+                                 componente_escogido, parametros[6], raiz)
 
     fin = time()
     print(f"T buscar en arbol = {fin - inicio}")
+    if type(raiz) == list:
+        return raiz
+    datos = arbol.guardar_inorder(raiz, datos)
+    return datos
 
 
-def buscar_intancias(d_instancias, estado, garantia, componente, orden):
+def buscar_intancias(d_instancias, estado, garantia, componente, orden, raiz):
     datos_instancias = leer(f"{d_instancias}instancias")
     arbol = ArbolAVL()
-    raiz = None
+    datos = []
     if orden == "Sin orden":
         for dato_instancia in datos_instancias:
             if (estado == "Todos los estados" or dato_instancia.get("estado") == estado) \
                     and (garantia == "Todas las garantias minimas" or dato_instancia.get("garantia") == garantia):
-                print(dato_instancia)
-        return
+                datos.append([dato_instancia, componente])
+                # print(dato_instancia)
+        return datos
     elif orden == "Precio":
         for dato_instancia in datos_instancias:
             if (estado == "Todos los estados" or dato_instancia.get("estado") == estado) \
@@ -95,7 +104,7 @@ def buscar_intancias(d_instancias, estado, garantia, componente, orden):
             if (estado == "Todos los estados" or dato_instancia.get("estado") == estado)\
                      and (garantia == "Todas las garantias minimas" or dato_instancia.get("garantia") == garantia):
                 raiz = arbol.insertar(dato_instancia.get("tienda"), raiz, [dato_instancia, componente])
-    arbol.imprimir_inorder(raiz)
+    return raiz
 
 
 
